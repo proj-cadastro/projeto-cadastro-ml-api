@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+pymysql
+pandas
+scikit-learn
+tensorflow==2.10
+python-dotenv
+apscheduler
