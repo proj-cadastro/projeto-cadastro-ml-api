@@ -25,17 +25,3 @@ def preprocess_professores(df: pd.DataFrame, save_dir: str) -> dict:
         processed[target] = {"X": X.copy(), "y": y_encoded}
 
     return processed
-
-def preprocess_cursos(df: pd.DataFrame, save_dir: str) -> dict:
-    df = df.copy()
-    target = "modelo"
-    y = df[target]
-    X = pd.DataFrame([{} for _ in range(len(df))])
-
-    le = LabelEncoder()
-    y_encoded = le.fit_transform(y)
-
-    os.makedirs(save_dir, exist_ok=True)
-    joblib.dump(le, os.path.join(save_dir, f"{target}_encoder.pkl"))
-
-    return {"X": X, "y": y_encoded}
