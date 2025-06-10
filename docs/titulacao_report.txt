@@ -1,0 +1,9 @@
+Campo predito: titulacao
+Melhor modelo: decision_tree
+Acurácia rede neural: 0.7143
+Acurácia árvore de decisão: 0.7941
+Modelo árvore: modelos_treinados/titulacao_model.pkl
+Encoder árvore: modelos_treinados/titulacao_encoder.pkl
+Modelo NN: modelos_treinados/titulacao_nn.h5
+Encoder NN: modelos_treinados/titulacao_nn_encoder.pkl
+Matriz de confusão NN: modelos_treinados/confusion_matrix_titulacao_nn.png

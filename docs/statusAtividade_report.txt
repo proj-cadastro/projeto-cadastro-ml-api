@@ -1,0 +1,9 @@
+Campo predito: statusAtividade
+Melhor modelo: decision_tree
+Acurácia rede neural: 0.5714
+Acurácia árvore de decisão: 0.7647
+Modelo árvore: modelos_treinados/statusAtividade_model.pkl
+Encoder árvore: modelos_treinados/statusAtividade_encoder.pkl
+Modelo NN: modelos_treinados/statusAtividade_nn.h5
+Encoder NN: modelos_treinados/statusAtividade_nn_encoder.pkl
+Matriz de confusão NN: modelos_treinados/confusion_matrix_statusAtividade_nn.png

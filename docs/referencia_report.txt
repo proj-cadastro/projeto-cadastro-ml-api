@@ -1,0 +1,9 @@
+Campo predito: referencia
+Melhor modelo: decision_tree
+Acurácia rede neural: 0.0000
+Acurácia árvore de decisão: 0.7059
+Modelo árvore: modelos_treinados/referencia_model.pkl
+Encoder árvore: modelos_treinados/referencia_encoder.pkl
+Modelo NN: modelos_treinados/referencia_nn.h5
+Encoder NN: modelos_treinados/referencia_nn_encoder.pkl
+Matriz de confusão NN: modelos_treinados/confusion_matrix_referencia_nn.png

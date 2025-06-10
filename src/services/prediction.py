@@ -1,18 +1,38 @@
 import os
 import random
 import joblib
+import json
+import numpy as np
 import pandas as pd
-from src.api.schemas import ProfessorPartialInput, ProfessorFullOutput
 from fastapi import HTTPException
+from tensorflow.keras.models import load_model
+from src.api.schemas import ProfessorPartialInput, ProfessorFullOutput
 from src.data.load_data import load_professores
 from src.ml.preprocessing import extract_email_extension
 
 MODELS_DIR = "modelos_treinados"
+DOCS_DIR = "docs"
 
-def load_model_and_encoder(name):
-    model = joblib.load(os.path.join(MODELS_DIR, f"{name}_model.pkl"))
-    encoder = joblib.load(os.path.join(MODELS_DIR, f"{name}_encoder.pkl"))
-    return model, encoder
+def get_best_model_type(campo):
+    path = os.path.join(DOCS_DIR, f"{campo}_report.txt")
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("Melhor modelo:"):
+                return line.strip().split(":")[1].strip()
+    raise HTTPException(status_code=500, detail=f"Não foi possível determinar o modelo para o campo '{campo}'.")
+
+def load_model_and_encoder(campo):
+    tipo = get_best_model_type(campo)
+    if tipo == "decision_tree":
+        modelo = joblib.load(os.path.join(MODELS_DIR, f"{campo}_model.pkl"))
+        encoder = joblib.load(os.path.join(MODELS_DIR, f"{campo}_encoder.pkl"))
+        return ("decision_tree", modelo, encoder)
+    elif tipo == "neural_network":
+        modelo = load_model(os.path.join(MODELS_DIR, f"{campo}_nn.h5"))
+        encoder = joblib.load(os.path.join(MODELS_DIR, f"{campo}_nn_encoder.pkl"))
+        return ("neural_network", modelo, encoder)
+    else:
+        raise HTTPException(status_code=500, detail=f"Tipo de modelo inválido para '{campo}': {tipo}")
 
 def gerar_nome_completo():
     with open("src/resources/nomes_masculinos.txt", encoding="utf-8") as f1, \
@@ -34,29 +54,37 @@ def gerar_email_unico(nome, extensao, emails_existentes):
 def gerar_lattes(nome):
     return f"https://lattes.com.br/{nome.replace(' ', '').lower()}"
 
+def predict_value(campo, X_input):
+    tipo, modelo, encoder = load_model_and_encoder(campo)
+    if tipo == "decision_tree":
+        for col in modelo.feature_names_in_:
+            if col not in X_input.columns:
+                X_input[col] = 0
+        X_input = X_input[modelo.feature_names_in_]
+        pred = modelo.predict(X_input)
+        return encoder.inverse_transform(pred)[0]
+    elif tipo == "neural_network":
+        modelo_input = X_input.copy()
+        modelo_input = modelo_input.reindex(columns=sorted(modelo_input.columns), fill_value=0)
+        pred_probs = modelo.predict(modelo_input, verbose=0)
+        pred_idx = np.argmax(pred_probs, axis=1)[0]
+        return encoder.inverse_transform([pred_idx])[0]
+
 def predict_professor_full():
     try:
         dados = load_professores()
-
         X = pd.get_dummies(dados.drop(columns=["titulacao", "email", "referencia", "statusAtividade"]))
+        X = X.reindex(columns=sorted(X.columns), fill_value=0)
+        X_sample = X.sample(1)
         emails_existentes = dados["email"].tolist()
 
         predicoes = {}
         for campo in ["titulacao", "email_ext", "referencia", "statusAtividade"]:
-            try:
-                model, encoder = load_model_and_encoder(campo)
-                pred = model.predict(X.sample(1))
-                valor = encoder.inverse_transform(pred)[0]
-                predicoes[campo] = valor
-            except Exception as e:
-                raise HTTPException(status_code=500, detail=f"Erro ao prever '{campo}': {str(e)}")
+            predicoes[campo] = predict_value(campo, X_sample)
 
-        try:
-            nome = gerar_nome_completo()
-            email = gerar_email_unico(nome, predicoes["email_ext"], emails_existentes)
-            lattes = gerar_lattes(nome)
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Erro ao gerar nome, email ou lattes: {str(e)}")
+        nome = gerar_nome_completo()
+        email = gerar_email_unico(nome, predicoes["email_ext"], emails_existentes)
+        lattes = gerar_lattes(nome)
 
         return ProfessorFullOutput(
             nome=nome,
@@ -68,38 +96,31 @@ def predict_professor_full():
             lattes=lattes
         )
 
-    except HTTPException:
-        raise 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro interno inesperado: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Erro na predição full: {str(e)}")
 
 def predict_professor_partial(data: ProfessorPartialInput):
     try:
-        entrada = data.dict(exclude_none=True)
+        entrada = data.model_dump(exclude_none=True)
         X = pd.DataFrame([entrada])
+        X["email_ext"] = X["email"].apply(extract_email_extension) if "email" in X else None
+        if "email" in X:
+            X.drop(columns=["email"], inplace=True)
         X = pd.get_dummies(X)
+        X = X.reindex(columns=sorted(X.columns), fill_value=0)
 
         previsoes = {}
         for campo in ["titulacao", "email_ext", "referencia", "statusAtividade"]:
             if campo not in entrada:
-                try:
-                    model, encoder = load_model_and_encoder(campo)
+                previsoes[campo] = predict_value(campo, X)
 
-                    colunas_esperadas = model.feature_names_in_
-                    for col in colunas_esperadas:
-                        if col not in X.columns:
-                            X[col] = 0
-                    X = X[colunas_esperadas]
-
-                    pred = model.predict(X)
-                    previsoes[campo] = encoder.inverse_transform(pred)[0]
-
-                except Exception as e:
-                    raise HTTPException(status_code=500, detail=f"Erro ao prever '{campo}': {str(e)}")
+        if "nome" in entrada:
+            nome = entrada["nome"]
+            emails_existentes = load_professores()["email"].tolist()
+            previsoes["email"] = gerar_email_unico(nome, previsoes["email_ext"], emails_existentes)
+            previsoes["lattes"] = gerar_lattes(nome)
 
         return previsoes
 
-    except HTTPException:
-        raise 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro interno inesperado: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Erro na predição parcial: {str(e)}")
