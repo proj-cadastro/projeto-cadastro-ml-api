@@ -1,0 +1,7 @@
+Rede Neural:
+Arquitetura do Modelo: [64, 32, 3]
+Hiperparâmetros: Otimizador: Adam, Função de Ativação: ReLU, Épocas: 50, Batch: 8
+Desempenho: Acurácia: 0.7667, Precisão: 0.8071, Recall: 0.7667, F1: 0.7214
+Análise de Overfitting/Underfitting: Verificar matriz de confusão
+Tempo de Treinamento: (Não registrado)
+Matriz de Confusão: [[14, 1, 0], [1, 8, 0], [3, 2, 1]]

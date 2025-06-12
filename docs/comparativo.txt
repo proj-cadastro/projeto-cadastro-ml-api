@@ -1,0 +1,19 @@
+titulacao:
+  Melhor modelo: decision_tree
+  Acurácia NN: 0.7667
+  Acurácia DT: 0.9000
+
+email_ext:
+  Melhor modelo: decision_tree
+  Acurácia NN: 0.8000
+  Acurácia DT: 0.9333
+
+referencia:
+  Melhor modelo: decision_tree
+  Acurácia NN: 0.5667
+  Acurácia DT: 0.9000
+
+statusAtividade:
+  Melhor modelo: decision_tree
+  Acurácia NN: 0.7667
+  Acurácia DT: 0.9000

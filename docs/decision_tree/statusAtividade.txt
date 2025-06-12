@@ -1,0 +1,7 @@
+Árvore de Decisão:
+Características do Modelo: Tipo: DecisionTreeClassifier
+Desempenho: Acurácia: 0.9000, Precisão: 0.9224, Recall: 0.9000, F1: 0.8999
+Importância das Variáveis: (não extraído)
+Análise de Overfitting/Underfitting: Comparar erro de treino/teste
+Tempo de Treinamento: (Não registrado)
+Matriz de Confusão: [[5, 0, 0, 0], [0, 9, 0, 0], [2, 1, 10, 0], [0, 0, 0, 3]]

@@ -73,3 +73,11 @@ data/
 *.bak
 *.swp
 *~
+
+# Exceção: manter relatórios da pasta docs/
+!docs/
+!docs/**
+
+# Modelos treinados (não enviar para o repositório)
+modelos_treinados/
+modelos_treinados/**
