@@ -1,7 +1,9 @@
+Observação: Para predição parcial, este campo é previsto por ML apenas se algum dos campos de entrada relevantes for fornecido. Caso contrário, a predição é feita por estatística, sorteando entre os valores mais comuns do banco.
+
 Rede Neural:
 Arquitetura do Modelo: [64, 32, 4]
 Hiperparâmetros: Otimizador: Adam, Função de Ativação: ReLU, Épocas: 50, Batch: 8
-Desempenho: Acurácia: 0.7667, Precisão: 0.8124, Recall: 0.7667, F1: 0.7601
+Desempenho: Acurácia: 0.3040, Precisão: 0.2338, Recall: 0.3040, F1: 0.2462
 Análise de Overfitting/Underfitting: Verificar matriz de confusão
 Tempo de Treinamento: (Não registrado)
-Matriz de Confusão: [[2, 2, 1, 0], [0, 8, 1, 0], [0, 3, 10, 0], [0, 0, 0, 3]]
+Matriz de Confusão: [[138, 0, 118, 23], [102, 0, 89, 26], [104, 0, 139, 20], [113, 0, 101, 27]]

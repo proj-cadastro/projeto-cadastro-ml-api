@@ -1,301 +1,451 @@
-titulacao,idUnidade,referencia,statusAtividade,email
-ESPECIALISTA,100,PES_II_B,NAO_ATIVO,@outlook.com
-DOUTOR,104,PES_I_A,NAO_ATIVO,@outlook.com
-DOUTOR,102,PES_II_B,AFASTADO,@hotmail.com
-MESTRE,103,PES_I_D,AFASTADO,@hotmail.com
-DOUTOR,100,PES_II_B,ATIVO,@gmail.com
-ESPECIALISTA,102,PES_III_C,AFASTADO,@fatec.sp.gov.br
-DOUTOR,101,PES_I_D,AFASTADO,@fatec.sp.gov.br
-DOUTOR,103,PES_II_B,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,102,PES_II_E,AFASTADO,@hotmail.com
-MESTRE,103,PES_I_D,LICENCA,@fatec.sp.gov.br
-MESTRE,102,PES_II_E,NAO_ATIVO,@hotmail.com
-DOUTOR,104,PES_I_D,LICENCA,@gmail.com
-ESPECIALISTA,103,PES_II_B,ATIVO,@gmail.com
-MESTRE,100,PES_I_D,LICENCA,@fatec.sp.gov.br
-ESPECIALISTA,101,PES_II_E,ATIVO,@hotmail.com
-MESTRE,102,PES_I_A,NAO_ATIVO,@gmail.com
-MESTRE,104,PES_II_B,AFASTADO,@fatec.sp.gov.br
-DOUTOR,102,PES_I_D,ATIVO,@outlook.com
-DOUTOR,102,PES_I_D,AFASTADO,@gmail.com
-MESTRE,103,PES_I_D,NAO_ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,100,PES_I_A,ATIVO,@outlook.com
-DOUTOR,101,PES_III_C,NAO_ATIVO,@gmail.com
-MESTRE,101,PES_II_B,ATIVO,@gmail.com
-DOUTOR,103,PES_III_C,NAO_ATIVO,@gmail.com
-DOUTOR,103,PES_III_C,ATIVO,@hotmail.com
-ESPECIALISTA,101,PES_II_B,NAO_ATIVO,@gmail.com
-ESPECIALISTA,102,PES_I_D,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,100,PES_III_C,LICENCA,@gmail.com
-ESPECIALISTA,104,PES_III_C,ATIVO,@fatec.sp.gov.br
-MESTRE,100,PES_II_E,LICENCA,@outlook.com
-ESPECIALISTA,100,PES_II_B,ATIVO,@outlook.com
-DOUTOR,100,PES_III_C,LICENCA,@hotmail.com
-DOUTOR,102,PES_III_C,LICENCA,@hotmail.com
-ESPECIALISTA,103,PES_II_E,AFASTADO,@hotmail.com
-DOUTOR,103,PES_I_A,LICENCA,@hotmail.com
-DOUTOR,101,PES_I_A,LICENCA,@outlook.com
-ESPECIALISTA,103,PES_III_C,NAO_ATIVO,@outlook.com
-DOUTOR,101,PES_II_B,LICENCA,@gmail.com
-ESPECIALISTA,102,PES_II_B,ATIVO,@outlook.com
-MESTRE,103,PES_II_E,NAO_ATIVO,@outlook.com
-DOUTOR,103,PES_II_E,LICENCA,@outlook.com
-DOUTOR,103,PES_I_A,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,102,PES_II_B,ATIVO,@gmail.com
-MESTRE,102,PES_II_B,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,103,PES_II_B,NAO_ATIVO,@gmail.com
-ESPECIALISTA,102,PES_III_C,NAO_ATIVO,@outlook.com
-ESPECIALISTA,100,PES_I_A,NAO_ATIVO,@outlook.com
-ESPECIALISTA,101,PES_I_A,AFASTADO,@fatec.sp.gov.br
-DOUTOR,101,PES_I_A,AFASTADO,@outlook.com
-MESTRE,103,PES_III_C,ATIVO,@hotmail.com
-ESPECIALISTA,103,PES_II_B,LICENCA,@fatec.sp.gov.br
-DOUTOR,104,PES_I_D,LICENCA,@fatec.sp.gov.br
-MESTRE,102,PES_I_D,ATIVO,@gmail.com
-ESPECIALISTA,101,PES_II_E,NAO_ATIVO,@gmail.com
-MESTRE,102,PES_II_E,AFASTADO,@outlook.com
-ESPECIALISTA,103,PES_I_D,ATIVO,@hotmail.com
-DOUTOR,103,PES_I_D,NAO_ATIVO,@gmail.com
-ESPECIALISTA,102,PES_II_B,ATIVO,@outlook.com
-MESTRE,101,PES_I_D,LICENCA,@hotmail.com
-DOUTOR,101,PES_I_D,AFASTADO,@fatec.sp.gov.br
-DOUTOR,102,PES_III_C,LICENCA,@fatec.sp.gov.br
-ESPECIALISTA,101,PES_III_C,ATIVO,@gmail.com
-MESTRE,103,PES_II_E,NAO_ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,100,PES_I_D,LICENCA,@gmail.com
-MESTRE,103,PES_III_C,LICENCA,@hotmail.com
-ESPECIALISTA,104,PES_I_D,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,100,PES_I_A,AFASTADO,@outlook.com
-DOUTOR,101,PES_II_B,AFASTADO,@outlook.com
-ESPECIALISTA,102,PES_I_A,LICENCA,@hotmail.com
-ESPECIALISTA,104,PES_II_B,AFASTADO,@outlook.com
-ESPECIALISTA,104,PES_I_A,AFASTADO,@hotmail.com
-DOUTOR,104,PES_III_C,LICENCA,@gmail.com
-DOUTOR,100,PES_I_A,LICENCA,@hotmail.com
-ESPECIALISTA,103,PES_III_C,ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,104,PES_II_B,LICENCA,@fatec.sp.gov.br
-DOUTOR,103,PES_II_B,NAO_ATIVO,@gmail.com
-ESPECIALISTA,100,PES_I_D,NAO_ATIVO,@fatec.sp.gov.br
-MESTRE,103,PES_I_D,LICENCA,@hotmail.com
-MESTRE,102,PES_II_B,NAO_ATIVO,@hotmail.com
-MESTRE,104,PES_III_C,ATIVO,@outlook.com
-DOUTOR,103,PES_I_A,LICENCA,@fatec.sp.gov.br
-DOUTOR,101,PES_I_A,ATIVO,@outlook.com
-MESTRE,104,PES_II_E,AFASTADO,@hotmail.com
-MESTRE,104,PES_II_B,AFASTADO,@hotmail.com
-MESTRE,104,PES_II_E,NAO_ATIVO,@outlook.com
-MESTRE,100,PES_I_A,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,101,PES_III_C,LICENCA,@gmail.com
-DOUTOR,102,PES_II_E,NAO_ATIVO,@outlook.com
-ESPECIALISTA,100,PES_I_A,NAO_ATIVO,@hotmail.com
-MESTRE,102,PES_II_E,LICENCA,@gmail.com
-MESTRE,100,PES_III_C,AFASTADO,@outlook.com
-ESPECIALISTA,102,PES_I_A,NAO_ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,102,PES_III_C,ATIVO,@hotmail.com
-DOUTOR,103,PES_II_B,LICENCA,@outlook.com
-DOUTOR,101,PES_III_C,NAO_ATIVO,@gmail.com
-DOUTOR,100,PES_I_D,LICENCA,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_I_D,AFASTADO,@outlook.com
-ESPECIALISTA,102,PES_I_D,NAO_ATIVO,@outlook.com
-ESPECIALISTA,102,PES_III_C,NAO_ATIVO,@outlook.com
-MESTRE,100,PES_II_B,LICENCA,@gmail.com
-MESTRE,104,PES_II_B,ATIVO,@fatec.sp.gov.br
-MESTRE,104,PES_III_C,AFASTADO,@gmail.com
-ESPECIALISTA,103,PES_I_D,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,101,PES_I_A,ATIVO,@hotmail.com
-DOUTOR,103,PES_II_B,NAO_ATIVO,@hotmail.com
-MESTRE,101,PES_II_E,NAO_ATIVO,@gmail.com
-ESPECIALISTA,101,PES_III_C,AFASTADO,@outlook.com
-ESPECIALISTA,103,PES_III_C,NAO_ATIVO,@outlook.com
-DOUTOR,103,PES_III_C,LICENCA,@outlook.com
-ESPECIALISTA,102,PES_III_C,NAO_ATIVO,@hotmail.com
-DOUTOR,102,PES_III_C,LICENCA,@hotmail.com
-MESTRE,102,PES_I_D,NAO_ATIVO,@outlook.com
-MESTRE,102,PES_III_C,LICENCA,@outlook.com
-DOUTOR,104,PES_III_C,NAO_ATIVO,@fatec.sp.gov.br
-MESTRE,101,PES_II_B,ATIVO,@outlook.com
-ESPECIALISTA,100,PES_II_B,NAO_ATIVO,@outlook.com
-ESPECIALISTA,103,PES_I_D,AFASTADO,@outlook.com
-ESPECIALISTA,102,PES_I_D,ATIVO,@hotmail.com
-DOUTOR,100,PES_III_C,AFASTADO,@hotmail.com
-DOUTOR,100,PES_II_E,LICENCA,@fatec.sp.gov.br
-DOUTOR,101,PES_I_A,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_II_E,AFASTADO,@outlook.com
-MESTRE,102,PES_I_A,ATIVO,@hotmail.com
-ESPECIALISTA,100,PES_I_D,NAO_ATIVO,@hotmail.com
-DOUTOR,103,PES_II_E,AFASTADO,@outlook.com
-DOUTOR,100,PES_II_B,ATIVO,@outlook.com
-MESTRE,103,PES_III_C,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,103,PES_II_B,AFASTADO,@gmail.com
-MESTRE,101,PES_II_E,LICENCA,@hotmail.com
-DOUTOR,102,PES_II_B,AFASTADO,@hotmail.com
-ESPECIALISTA,103,PES_II_E,LICENCA,@gmail.com
-MESTRE,100,PES_I_D,AFASTADO,@fatec.sp.gov.br
-MESTRE,101,PES_I_A,LICENCA,@fatec.sp.gov.br
-DOUTOR,103,PES_II_B,LICENCA,@outlook.com
-ESPECIALISTA,104,PES_I_A,LICENCA,@outlook.com
-ESPECIALISTA,101,PES_I_A,ATIVO,@fatec.sp.gov.br
-MESTRE,101,PES_II_E,LICENCA,@gmail.com
-ESPECIALISTA,102,PES_II_B,AFASTADO,@hotmail.com
-DOUTOR,103,PES_I_D,NAO_ATIVO,@outlook.com
-MESTRE,104,PES_II_E,AFASTADO,@hotmail.com
-ESPECIALISTA,104,PES_I_A,NAO_ATIVO,@outlook.com
-DOUTOR,104,PES_I_A,ATIVO,@hotmail.com
-ESPECIALISTA,104,PES_I_D,AFASTADO,@outlook.com
-ESPECIALISTA,103,PES_I_A,AFASTADO,@fatec.sp.gov.br
-DOUTOR,104,PES_II_E,ATIVO,@fatec.sp.gov.br
-DOUTOR,104,PES_II_E,NAO_ATIVO,@gmail.com
-ESPECIALISTA,103,PES_II_B,ATIVO,@fatec.sp.gov.br
-MESTRE,100,PES_I_D,ATIVO,@gmail.com
-MESTRE,102,PES_I_A,ATIVO,@gmail.com
-MESTRE,100,PES_II_B,NAO_ATIVO,@hotmail.com
-DOUTOR,103,PES_II_B,NAO_ATIVO,@fatec.sp.gov.br
-MESTRE,103,PES_I_A,AFASTADO,@outlook.com
-DOUTOR,101,PES_III_C,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,101,PES_I_A,ATIVO,@outlook.com
-MESTRE,104,PES_II_E,NAO_ATIVO,@hotmail.com
-DOUTOR,103,PES_II_B,AFASTADO,@outlook.com
-DOUTOR,100,PES_I_A,NAO_ATIVO,@gmail.com
-DOUTOR,101,PES_I_A,ATIVO,@gmail.com
-MESTRE,104,PES_I_A,AFASTADO,@gmail.com
-MESTRE,103,PES_I_D,AFASTADO,@gmail.com
-DOUTOR,104,PES_II_B,AFASTADO,@outlook.com
-ESPECIALISTA,104,PES_II_B,AFASTADO,@outlook.com
-DOUTOR,104,PES_I_D,NAO_ATIVO,@outlook.com
-MESTRE,100,PES_III_C,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_I_A,LICENCA,@fatec.sp.gov.br
-ESPECIALISTA,102,PES_II_E,NAO_ATIVO,@hotmail.com
-MESTRE,103,PES_I_D,NAO_ATIVO,@hotmail.com
-DOUTOR,102,PES_I_D,NAO_ATIVO,@gmail.com
-ESPECIALISTA,103,PES_II_E,AFASTADO,@fatec.sp.gov.br
-DOUTOR,102,PES_I_D,LICENCA,@gmail.com
-MESTRE,102,PES_I_A,AFASTADO,@gmail.com
-MESTRE,103,PES_III_C,ATIVO,@gmail.com
-DOUTOR,104,PES_III_C,AFASTADO,@fatec.sp.gov.br
-DOUTOR,102,PES_II_B,ATIVO,@hotmail.com
-DOUTOR,100,PES_II_E,AFASTADO,@hotmail.com
-MESTRE,101,PES_III_C,LICENCA,@outlook.com
-MESTRE,103,PES_III_C,LICENCA,@outlook.com
-MESTRE,102,PES_III_C,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,103,PES_II_B,AFASTADO,@outlook.com
-MESTRE,103,PES_I_A,AFASTADO,@hotmail.com
-DOUTOR,102,PES_III_C,NAO_ATIVO,@outlook.com
-DOUTOR,101,PES_II_B,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,101,PES_II_E,LICENCA,@outlook.com
-MESTRE,103,PES_II_E,AFASTADO,@outlook.com
-DOUTOR,101,PES_III_C,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,100,PES_III_C,ATIVO,@gmail.com
-ESPECIALISTA,100,PES_I_A,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,101,PES_I_A,AFASTADO,@gmail.com
-DOUTOR,104,PES_II_E,LICENCA,@gmail.com
-ESPECIALISTA,104,PES_II_E,NAO_ATIVO,@gmail.com
-DOUTOR,104,PES_III_C,NAO_ATIVO,@gmail.com
-DOUTOR,104,PES_II_B,LICENCA,@gmail.com
-ESPECIALISTA,103,PES_I_D,ATIVO,@gmail.com
-ESPECIALISTA,101,PES_I_D,AFASTADO,@outlook.com
-MESTRE,102,PES_II_E,ATIVO,@outlook.com
-MESTRE,103,PES_III_C,AFASTADO,@hotmail.com
-MESTRE,100,PES_I_A,ATIVO,@fatec.sp.gov.br
-MESTRE,103,PES_III_C,NAO_ATIVO,@gmail.com
-ESPECIALISTA,100,PES_I_D,ATIVO,@fatec.sp.gov.br
-MESTRE,102,PES_III_C,ATIVO,@gmail.com
-DOUTOR,101,PES_III_C,NAO_ATIVO,@outlook.com
-DOUTOR,100,PES_II_B,ATIVO,@hotmail.com
-MESTRE,100,PES_I_D,AFASTADO,@fatec.sp.gov.br
-DOUTOR,102,PES_I_D,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,104,PES_II_B,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,100,PES_III_C,LICENCA,@gmail.com
-DOUTOR,103,PES_I_D,ATIVO,@outlook.com
-ESPECIALISTA,104,PES_III_C,NAO_ATIVO,@outlook.com
-DOUTOR,102,PES_II_E,NAO_ATIVO,@hotmail.com
-MESTRE,104,PES_II_E,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,104,PES_II_E,ATIVO,@outlook.com
-DOUTOR,100,PES_I_A,LICENCA,@hotmail.com
-MESTRE,101,PES_II_E,LICENCA,@outlook.com
-DOUTOR,100,PES_I_A,LICENCA,@fatec.sp.gov.br
-MESTRE,102,PES_I_A,AFASTADO,@gmail.com
-DOUTOR,103,PES_II_E,NAO_ATIVO,@gmail.com
-DOUTOR,100,PES_II_B,ATIVO,@outlook.com
-MESTRE,100,PES_II_B,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,104,PES_I_D,AFASTADO,@fatec.sp.gov.br
-DOUTOR,101,PES_II_B,LICENCA,@outlook.com
-MESTRE,101,PES_I_A,AFASTADO,@fatec.sp.gov.br
-MESTRE,103,PES_II_B,NAO_ATIVO,@gmail.com
-MESTRE,102,PES_I_D,NAO_ATIVO,@hotmail.com
-MESTRE,100,PES_I_D,LICENCA,@gmail.com
-MESTRE,102,PES_III_C,NAO_ATIVO,@outlook.com
-MESTRE,102,PES_II_E,AFASTADO,@outlook.com
-MESTRE,104,PES_I_D,NAO_ATIVO,@outlook.com
-DOUTOR,103,PES_II_B,LICENCA,@fatec.sp.gov.br
-ESPECIALISTA,101,PES_II_B,NAO_ATIVO,@outlook.com
-MESTRE,102,PES_I_A,AFASTADO,@hotmail.com
-ESPECIALISTA,104,PES_I_A,NAO_ATIVO,@hotmail.com
-MESTRE,102,PES_I_A,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,102,PES_I_D,LICENCA,@hotmail.com
-ESPECIALISTA,103,PES_II_E,ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_III_C,NAO_ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,100,PES_II_B,ATIVO,@gmail.com
-DOUTOR,102,PES_I_D,ATIVO,@fatec.sp.gov.br
-MESTRE,103,PES_I_A,ATIVO,@gmail.com
-MESTRE,101,PES_III_C,AFASTADO,@fatec.sp.gov.br
-MESTRE,103,PES_II_E,AFASTADO,@outlook.com
-DOUTOR,103,PES_I_A,LICENCA,@fatec.sp.gov.br
-DOUTOR,100,PES_I_D,LICENCA,@outlook.com
-MESTRE,103,PES_I_D,NAO_ATIVO,@outlook.com
-MESTRE,100,PES_II_E,NAO_ATIVO,@outlook.com
-DOUTOR,102,PES_I_A,ATIVO,@gmail.com
-MESTRE,100,PES_I_D,AFASTADO,@hotmail.com
-ESPECIALISTA,101,PES_II_B,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,103,PES_I_D,AFASTADO,@fatec.sp.gov.br
-MESTRE,100,PES_III_C,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_II_E,ATIVO,@hotmail.com
-DOUTOR,102,PES_I_A,ATIVO,@hotmail.com
-MESTRE,102,PES_I_D,NAO_ATIVO,@gmail.com
-MESTRE,103,PES_III_C,LICENCA,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_III_C,ATIVO,@outlook.com
-MESTRE,103,PES_III_C,AFASTADO,@outlook.com
-ESPECIALISTA,104,PES_I_A,AFASTADO,@outlook.com
-DOUTOR,101,PES_II_B,ATIVO,@hotmail.com
-MESTRE,101,PES_III_C,NAO_ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,101,PES_III_C,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,103,PES_III_C,AFASTADO,@hotmail.com
-MESTRE,102,PES_I_D,AFASTADO,@outlook.com
-MESTRE,104,PES_I_A,LICENCA,@gmail.com
-MESTRE,101,PES_I_D,NAO_ATIVO,@fatec.sp.gov.br
-MESTRE,103,PES_II_E,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,100,PES_III_C,ATIVO,@hotmail.com
-MESTRE,100,PES_II_B,AFASTADO,@outlook.com
-DOUTOR,103,PES_III_C,NAO_ATIVO,@gmail.com
-ESPECIALISTA,100,PES_II_B,LICENCA,@gmail.com
-ESPECIALISTA,103,PES_III_C,AFASTADO,@fatec.sp.gov.br
-DOUTOR,101,PES_II_B,ATIVO,@fatec.sp.gov.br
-MESTRE,102,PES_I_A,NAO_ATIVO,@gmail.com
-DOUTOR,101,PES_III_C,LICENCA,@fatec.sp.gov.br
-DOUTOR,104,PES_I_D,AFASTADO,@hotmail.com
-DOUTOR,104,PES_II_B,LICENCA,@hotmail.com
-MESTRE,102,PES_II_B,LICENCA,@gmail.com
-DOUTOR,103,PES_I_A,LICENCA,@hotmail.com
-ESPECIALISTA,101,PES_I_D,AFASTADO,@outlook.com
-DOUTOR,103,PES_II_E,AFASTADO,@outlook.com
-ESPECIALISTA,103,PES_II_E,NAO_ATIVO,@gmail.com
-ESPECIALISTA,100,PES_II_E,LICENCA,@outlook.com
-MESTRE,103,PES_II_B,ATIVO,@gmail.com
-ESPECIALISTA,103,PES_II_B,ATIVO,@fatec.sp.gov.br
-DOUTOR,103,PES_I_D,NAO_ATIVO,@outlook.com
-MESTRE,102,PES_II_B,AFASTADO,@fatec.sp.gov.br
-MESTRE,100,PES_I_A,ATIVO,@fatec.sp.gov.br
-DOUTOR,100,PES_I_D,NAO_ATIVO,@fatec.sp.gov.br
-DOUTOR,103,PES_I_D,AFASTADO,@outlook.com
-DOUTOR,102,PES_I_A,LICENCA,@outlook.com
-DOUTOR,102,PES_I_D,ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,102,PES_I_D,NAO_ATIVO,@gmail.com
-ESPECIALISTA,100,PES_I_A,AFASTADO,@fatec.sp.gov.br
-DOUTOR,101,PES_III_C,AFASTADO,@fatec.sp.gov.br
-DOUTOR,100,PES_II_B,ATIVO,@fatec.sp.gov.br
-ESPECIALISTA,101,PES_II_E,ATIVO,@hotmail.com
-MESTRE,100,PES_I_A,ATIVO,@outlook.com
-MESTRE,102,PES_I_D,NAO_ATIVO,@hotmail.com
-ESPECIALISTA,101,PES_I_A,ATIVO,@hotmail.com
-MESTRE,102,PES_I_D,AFASTADO,@fatec.sp.gov.br
-ESPECIALISTA,103,PES_I_D,ATIVO,@gmail.com
-DOUTOR,100,PES_III_C,NAO_ATIVO,@outlook.com
+nome,email,titulacao,idUnidade,referencia,lattes,statusAtividade,observacoes
+Lucas Costa,lucascosta856@fatec.sp.gov.br,ESPECIALISTA,085,PES_I_A,https://lattes.cnpq.br/U043AS4PYJ9CHNMH,LICENCA,Professor em avaliação
+Mateus Costa,mateuscosta862@fatec.sp.gov.br,ESPECIALISTA,081,PES_I_C,https://lattes.cnpq.br/9RJVO37BCODB66AY,ATIVO,Professor em avaliação
+Mateus Oliveira,mateusoliveira145@fatec.sp.gov.br,MESTRE,188,PES_II_B,https://lattes.cnpq.br/SUBLW4W41T3TGH05,ATIVO,Professor em avaliação
+Pedro Oliveira,pedrooliveira940@fatec.sp.gov.br,MESTRE,011,PES_I_B,https://lattes.cnpq.br/6VHUN3GISFPE50YX,AFASTADO,
+Eduardo Oliveira,eduardooliveira889@fatec.sp.gov.br,MESTRE,308,PES_I_B,https://lattes.cnpq.br/34RN4QHE9A1N09Z0,NAO_ATIVO,
+Larissa Souza,larissasouza659@fatec.sp.gov.br,MESTRE,109,PES_I_B,https://lattes.cnpq.br/2WN7J0Q9HKAAGR77,ATIVO,Professor em avaliação
+Vinicius Silva,viniciussilva489@fatec.sp.gov.br,MESTRE,241,PES_II_A,https://lattes.cnpq.br/HW3FMJJRX45MKFIW,LICENCA,Liberado para alocação
+Juliana Almeida,julianaalmeida927@fatec.sp.gov.br,MESTRE,121,PES_III_B,https://lattes.cnpq.br/IOI8F6NP71DWZ02D,ATIVO,Professor em avaliação
+Larissa Rodrigues,larissarodrigues599@gmail.com,MESTRE,291,PES_I_C,https://lattes.cnpq.br/7EQLDYKQ2M0LKM63,NAO_ATIVO,Professor em avaliação
+Mateus Costa,mateuscosta370@fatec.sp.gov.br,DOUTOR,188,PES_III_B,https://lattes.cnpq.br/PLPV91QBTS0T0VGP,ATIVO,Professor em avaliação
+Juliana Rodrigues,julianarodrigues908@gmail.com,MESTRE,120,PES_I_A,https://lattes.cnpq.br/BQUMDAOF9U15EXGG,ATIVO,Professor em avaliação
+Lucas Costa,lucascosta548@gmail.com,ESPECIALISTA,011,PES_I_A,https://lattes.cnpq.br/OGI3K2MD7LFKWLCC,NAO_ATIVO,
+Marina Almeida,marinaalmeida481@fatec.sp.gov.br,MESTRE,325,PES_II_B,https://lattes.cnpq.br/CXZVKJSPRKX9P77Y,AFASTADO,Liberado para alocação
+João Rodrigues,joãorodrigues347@fatec.sp.gov.br,ESPECIALISTA,081,PES_II_A,https://lattes.cnpq.br/VF77QIENJUWQCWQJ,AFASTADO,
+Juliana Pereira,julianapereira109@fatec.sp.gov.br,ESPECIALISTA,220,PES_III_B,https://lattes.cnpq.br/AN6VXGA733634ZXS,ATIVO,
+Ana Oliveira,anaoliveira395@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_A,https://lattes.cnpq.br/XI8VNCW0W2ZFNP80,NAO_ATIVO,Experiência internacional
+Ana Almeida,anaalmeida337@fatec.sp.gov.br,MESTRE,109,PES_II_B,https://lattes.cnpq.br/1NFKE4V91M4OSOKH,ATIVO,
+Camila Silva,camilasilva276@fatec.sp.gov.br,MESTRE,109,PES_III_B,https://lattes.cnpq.br/V0QLGUC2TE5WP546,ATIVO,
+Larissa Rodrigues,larissarodrigues267@fatec.sp.gov.br,ESPECIALISTA,308,PES_I_A,https://lattes.cnpq.br/K3QFSKVRESJALN5E,NAO_ATIVO,Experiência internacional
+Beatriz Costa,beatrizcosta121@fatec.sp.gov.br,ESPECIALISTA,303,PES_I_A,https://lattes.cnpq.br/YPB69I5P1H1M97CR,AFASTADO,
+Larissa Almeida,larissaalmeida409@fatec.sp.gov.br,ESPECIALISTA,109,PES_I_B,https://lattes.cnpq.br/RTMRUTI02OA8DQID,LICENCA,Experiência internacional
+Mateus Silva,mateussilva863@gmail.com,MESTRE,282,PES_III_B,https://lattes.cnpq.br/79J4XABD0X9YHGF2,ATIVO,
+Marina Silva,marinasilva685@gmail.com,MESTRE,276,PES_I_C,https://lattes.cnpq.br/82LASEUG8YJKOQ25,AFASTADO,Liberado para alocação
+Mateus Costa,mateuscosta715@gmail.com,ESPECIALISTA,241,PES_I_B,https://lattes.cnpq.br/3BO576KGRZD2WXYU,LICENCA,Professor em avaliação
+Pedro Silva,pedrosilva663@fatec.sp.gov.br,MESTRE,085,PES_II_B,https://lattes.cnpq.br/LZG4J6XM53TC2RWE,AFASTADO,
+Juliana Barbosa,julianabarbosa949@fatec.sp.gov.br,DOUTOR,220,PES_III_B,https://lattes.cnpq.br/BGL5WK6F5U4NG7F2,ATIVO,Professor em avaliação
+Juliana Pereira,julianapereira914@fatec.sp.gov.br,MESTRE,085,PES_I_C,https://lattes.cnpq.br/6SYH8H740QBP0N9T,LICENCA,Experiência internacional
+Camila Rodrigues,camilarodrigues829@fatec.sp.gov.br,DOUTOR,169,PES_II_A,https://lattes.cnpq.br/18YKO4EOL1UG7HRZ,AFASTADO,Liberado para alocação
+Vinicius Almeida,viniciusalmeida113@fatec.sp.gov.br,ESPECIALISTA,188,PES_I_C,https://lattes.cnpq.br/7YHDYOWMN0MPU270,NAO_ATIVO,Experiência internacional
+Mateus Almeida,mateusalmeida413@fatec.sp.gov.br,ESPECIALISTA,121,PES_I_A,https://lattes.cnpq.br/YQIUS6ATZ1WMV7ZL,AFASTADO,Liberado para alocação
+Beatriz Costa,beatrizcosta830@fatec.sp.gov.br,MESTRE,009,PES_I_C,https://lattes.cnpq.br/ZHULE6SDTHAVYIS0,ATIVO,
+Juliana Almeida,julianaalmeida647@fatec.sp.gov.br,MESTRE,196,PES_II_B,https://lattes.cnpq.br/PX5HBXGL3HJJ3JE3,ATIVO,Professor em avaliação
+Beatriz Oliveira,beatrizoliveira778@fatec.sp.gov.br,ESPECIALISTA,020,PES_I_A,https://lattes.cnpq.br/X81GHM1C9HHPW58B,AFASTADO,Liberado para alocação
+Vinicius Costa,viniciuscosta961@fatec.sp.gov.br,MESTRE,321,PES_I_A,https://lattes.cnpq.br/HOVMSP9ZOWTXK5B3,LICENCA,Experiência internacional
+Fernanda Almeida,fernandaalmeida522@fatec.sp.gov.br,DOUTOR,216,PES_I_A,https://lattes.cnpq.br/S2ENMLAKDWK7U3Q1,ATIVO,Professor em avaliação
+Beatriz Costa,beatrizcosta776@fatec.sp.gov.br,MESTRE,011,PES_II_A,https://lattes.cnpq.br/91XEGGADDL6KNYRC,ATIVO,
+Pedro Souza,pedrosouza920@fatec.sp.gov.br,MESTRE,062,PES_III_B,https://lattes.cnpq.br/HT4QELCN0AE7Q0UM,AFASTADO,
+Fernanda Pereira,fernandapereira149@fatec.sp.gov.br,MESTRE,325,PES_II_B,https://lattes.cnpq.br/VQO522XX1ONNW1Z0,ATIVO,
+Mateus Silva,mateussilva645@fatec.sp.gov.br,ESPECIALISTA,321,PES_III_A,https://lattes.cnpq.br/BE1ZKUSCQH2ZP5MF,LICENCA,Experiência internacional
+Eduardo Pereira,eduardopereira361@fatec.sp.gov.br,ESPECIALISTA,062,PES_III_B,https://lattes.cnpq.br/BHGJ5FGK0GF9JQX8,LICENCA,Experiência internacional
+Pedro Almeida,pedroalmeida579@gmail.com,MESTRE,081,PES_I_C,https://lattes.cnpq.br/L9IC91HXGNZO650Z,AFASTADO,
+Juliana Almeida,julianaalmeida814@fatec.sp.gov.br,MESTRE,319,PES_III_B,https://lattes.cnpq.br/UBL5ZGP0S60B6MB1,LICENCA,Professor em avaliação
+Juliana Oliveira,julianaoliveira312@fatec.sp.gov.br,ESPECIALISTA,220,PES_II_A,https://lattes.cnpq.br/XP9PDFHFE7OJNNOL,ATIVO,
+Juliana Barbosa,julianabarbosa340@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_A,https://lattes.cnpq.br/0I82WCRRWR7MODYS,ATIVO,
+Eduardo Rodrigues,eduardorodrigues789@fatec.sp.gov.br,MESTRE,321,PES_II_A,https://lattes.cnpq.br/KM4VY62YYNQYDS0Y,ATIVO,Professor em avaliação
+Carlos Costa,carloscosta342@fatec.sp.gov.br,ESPECIALISTA,051,PES_II_A,https://lattes.cnpq.br/RAF5Q0VTAQPEUCOB,NAO_ATIVO,Experiência internacional
+Pedro Souza,pedrosouza556@fatec.sp.gov.br,MESTRE,319,PES_I_C,https://lattes.cnpq.br/UMKANN3KB9L4150B,LICENCA,Experiência internacional
+Pedro Barbosa,pedrobarbosa568@fatec.sp.gov.br,ESPECIALISTA,303,PES_III_B,https://lattes.cnpq.br/D48VOMMA48YG87H5,NAO_ATIVO,
+Marina Rodrigues,marinarodrigues970@fatec.sp.gov.br,DOUTOR,169,PES_III_A,https://lattes.cnpq.br/TMQFXBVJX8JQKGSY,ATIVO,Professor em avaliação
+Ana Pereira,anapereira134@fatec.sp.gov.br,MESTRE,196,PES_I_C,https://lattes.cnpq.br/D0NE4P3VACX6R3WS,NAO_ATIVO,Professor em avaliação
+Eduardo Souza,eduardosouza866@fatec.sp.gov.br,MESTRE,085,PES_II_A,https://lattes.cnpq.br/XDXT3ZAZDQXNCR88,LICENCA,Professor em avaliação
+Mateus Costa,mateuscosta132@fatec.sp.gov.br,ESPECIALISTA,166,PES_I_A,https://lattes.cnpq.br/CJY935R31WER2DWL,AFASTADO,Liberado para alocação
+Mateus Pereira,mateuspereira471@fatec.sp.gov.br,DOUTOR,308,PES_I_A,https://lattes.cnpq.br/2402PTCMB6GBUOJ6,LICENCA,Liberado para alocação
+Marina Silva,marinasilva479@gmail.com,DOUTOR,216,PES_I_A,https://lattes.cnpq.br/TGYFRPG7IERQ0B8Y,AFASTADO,Liberado para alocação
+Larissa Souza,larissasouza488@fatec.sp.gov.br,MESTRE,319,PES_I_A,https://lattes.cnpq.br/QMVUEHV52FN55V5Q,ATIVO,
+Camila Costa,camilacosta656@fatec.sp.gov.br,DOUTOR,145,PES_I_C,https://lattes.cnpq.br/HM8BGFCBP7VGYLSW,ATIVO,Professor em avaliação
+Camila Souza,camilasouza682@fatec.sp.gov.br,DOUTOR,081,PES_III_A,https://lattes.cnpq.br/AAB4HL7D38OB6P0G,AFASTADO,Liberado para alocação
+João Rodrigues,joãorodrigues734@fatec.sp.gov.br,MESTRE,020,PES_I_B,https://lattes.cnpq.br/EY3XDAF07MD0WY8U,ATIVO,Professor em avaliação
+Fernanda Pereira,fernandapereira654@fatec.sp.gov.br,DOUTOR,145,PES_I_A,https://lattes.cnpq.br/R9SZ8JNWL4HTQW7Q,AFASTADO,
+João Rodrigues,joãorodrigues202@fatec.sp.gov.br,MESTRE,166,PES_I_B,https://lattes.cnpq.br/WVWP7MHEXMCGO1D7,LICENCA,Liberado para alocação
+Pedro Rodrigues,pedrorodrigues910@fatec.sp.gov.br,ESPECIALISTA,166,PES_II_A,https://lattes.cnpq.br/5F063B5K9G48SUP1,LICENCA,Liberado para alocação
+Vinicius Souza,viniciussouza736@gmail.com,MESTRE,282,PES_III_A,https://lattes.cnpq.br/K81JW98WREBZTH9Q,LICENCA,Professor em avaliação
+João Costa,joãocosta205@fatec.sp.gov.br,ESPECIALISTA,319,PES_I_A,https://lattes.cnpq.br/RRSGM1OW48VIGS8Z,ATIVO,
+Marina Souza,marinasouza921@fatec.sp.gov.br,MESTRE,325,PES_III_A,https://lattes.cnpq.br/8NY78PWCNKWAB5KN,ATIVO,Professor em avaliação
+Eduardo Souza,eduardosouza495@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_A,https://lattes.cnpq.br/VBC6T0ALDQJ21284,LICENCA,Liberado para alocação
+Larissa Barbosa,larissabarbosa115@gmail.com,MESTRE,321,PES_III_B,https://lattes.cnpq.br/6IE5AJM8KFKZE7J5,ATIVO,
+Eduardo Oliveira,eduardooliveira594@fatec.sp.gov.br,ESPECIALISTA,011,PES_I_A,https://lattes.cnpq.br/2FBM4P35KXR2LSFY,ATIVO,Professor em avaliação
+Ana Barbosa,anabarbosa900@fatec.sp.gov.br,ESPECIALISTA,324,PES_II_B,https://lattes.cnpq.br/LVBRCION0CKW11CU,NAO_ATIVO,
+Camila Barbosa,camilabarbosa696@fatec.sp.gov.br,MESTRE,321,PES_I_A,https://lattes.cnpq.br/21GJVI4IT7CI6UKT,AFASTADO,Liberado para alocação
+Eduardo Almeida,eduardoalmeida938@fatec.sp.gov.br,ESPECIALISTA,011,PES_I_A,https://lattes.cnpq.br/XUVWYA3604ZMHWOA,NAO_ATIVO,Experiência internacional
+Juliana Oliveira,julianaoliveira997@fatec.sp.gov.br,ESPECIALISTA,051,PES_II_A,https://lattes.cnpq.br/BZ36FKWWO864E7J7,ATIVO,Professor em avaliação
+Lucas Barbosa,lucasbarbosa783@fatec.sp.gov.br,DOUTOR,324,PES_II_A,https://lattes.cnpq.br/56JWAE9G2UPWX5OB,ATIVO,Professor em avaliação
+Carlos Pereira,carlospereira655@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_C,https://lattes.cnpq.br/F7BGQDJZZZ9FRVVN,NAO_ATIVO,Professor em avaliação
+Juliana Oliveira,julianaoliveira425@gmail.com,MESTRE,325,PES_III_B,https://lattes.cnpq.br/LPYMMH4M979OCJ2N,AFASTADO,Liberado para alocação
+Carlos Souza,carlossouza844@fatec.sp.gov.br,ESPECIALISTA,241,PES_I_C,https://lattes.cnpq.br/YL2QI2JLYP7YC568,NAO_ATIVO,Professor em avaliação
+Vinicius Silva,viniciussilva149@fatec.sp.gov.br,MESTRE,196,PES_I_C,https://lattes.cnpq.br/V1ZKD2HSYQBU66QQ,LICENCA,Experiência internacional
+Larissa Silva,larissasilva890@fatec.sp.gov.br,ESPECIALISTA,169,PES_II_B,https://lattes.cnpq.br/OVZ6PG95C1NIN4XP,AFASTADO,Liberado para alocação
+João Almeida,joãoalmeida538@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_B,https://lattes.cnpq.br/TDIIL7IWZC6VPCP7,ATIVO,Professor em avaliação
+Mateus Pereira,mateuspereira440@fatec.sp.gov.br,ESPECIALISTA,109,PES_III_B,https://lattes.cnpq.br/6TS9XTIUM5M0KTXG,LICENCA,Professor em avaliação
+Fernanda Costa,fernandacosta817@fatec.sp.gov.br,MESTRE,308,PES_III_B,https://lattes.cnpq.br/CTN4CGIHI8LMU6I6,ATIVO,
+João Pereira,joãopereira217@fatec.sp.gov.br,ESPECIALISTA,159,PES_I_A,https://lattes.cnpq.br/OKN4P1C0EK5XAQG4,AFASTADO,Liberado para alocação
+Carlos Costa,carloscosta171@gmail.com,DOUTOR,216,PES_I_A,https://lattes.cnpq.br/4RUY3GWEHHGPHKKK,AFASTADO,Liberado para alocação
+Marina Barbosa,marinabarbosa738@fatec.sp.gov.br,MESTRE,216,PES_II_A,https://lattes.cnpq.br/CUDTLN842OM499YR,ATIVO,Professor em avaliação
+Larissa Almeida,larissaalmeida679@fatec.sp.gov.br,MESTRE,319,PES_I_B,https://lattes.cnpq.br/72YW7WLDZMCVNUQB,AFASTADO,
+Fernanda Barbosa,fernandabarbosa922@fatec.sp.gov.br,MESTRE,232,PES_III_B,https://lattes.cnpq.br/I7LWKNIZFGPCXKPQ,NAO_ATIVO,
+Marina Costa,marinacosta861@fatec.sp.gov.br,MESTRE,109,PES_I_C,https://lattes.cnpq.br/WZ3WECELHVUXMXY4,LICENCA,Experiência internacional
+Larissa Costa,larissacosta873@fatec.sp.gov.br,MESTRE,159,PES_III_B,https://lattes.cnpq.br/LOVIMJ2GLUHPMD88,LICENCA,Liberado para alocação
+Eduardo Silva,eduardosilva368@gmail.com,MESTRE,062,PES_I_A,https://lattes.cnpq.br/Z81GBCO4L5QCR9S6,LICENCA,Liberado para alocação
+João Rodrigues,joãorodrigues397@fatec.sp.gov.br,MESTRE,216,PES_I_A,https://lattes.cnpq.br/0PWIFUDVJC6ODZRD,AFASTADO,Liberado para alocação
+Beatriz Rodrigues,beatrizrodrigues872@fatec.sp.gov.br,DOUTOR,308,PES_II_A,https://lattes.cnpq.br/E27K0Q4QR99YIKQP,AFASTADO,Liberado para alocação
+João Costa,joãocosta462@fatec.sp.gov.br,DOUTOR,324,PES_I_B,https://lattes.cnpq.br/B5OFIPLM2O4KIM2G,NAO_ATIVO,Professor em avaliação
+Juliana Barbosa,julianabarbosa738@fatec.sp.gov.br,MESTRE,282,PES_II_B,https://lattes.cnpq.br/ISU40HMXEQXDHG07,AFASTADO,Liberado para alocação
+Fernanda Oliveira,fernandaoliveira107@fatec.sp.gov.br,ESPECIALISTA,319,PES_I_A,https://lattes.cnpq.br/9VZPJDDF0LLO78A6,NAO_ATIVO,Professor em avaliação
+Lucas Almeida,lucasalmeida467@fatec.sp.gov.br,ESPECIALISTA,062,PES_I_A,https://lattes.cnpq.br/1UCCU5Y9O8ZUZU7F,NAO_ATIVO,Experiência internacional
+Fernanda Rodrigues,fernandarodrigues335@fatec.sp.gov.br,DOUTOR,159,PES_II_A,https://lattes.cnpq.br/W6GIO6PGOFIPHM6W,ATIVO,
+Camila Oliveira,camilaoliveira322@fatec.sp.gov.br,ESPECIALISTA,169,PES_II_A,https://lattes.cnpq.br/06HYY7SP5QH7GHVK,LICENCA,Liberado para alocação
+João Souza,joãosouza907@fatec.sp.gov.br,DOUTOR,276,PES_I_A,https://lattes.cnpq.br/JL7ZBVLBJMJS089I,LICENCA,Experiência internacional
+Carlos Pereira,carlospereira586@fatec.sp.gov.br,DOUTOR,081,PES_II_A,https://lattes.cnpq.br/SA3KSOQ43ECF80B5,NAO_ATIVO,Experiência internacional
+Marina Pereira,marinapereira349@fatec.sp.gov.br,MESTRE,282,PES_I_C,https://lattes.cnpq.br/YOELCWZQ46BRQPJM,ATIVO,Professor em avaliação
+Mateus Almeida,mateusalmeida661@fatec.sp.gov.br,MESTRE,188,PES_I_B,https://lattes.cnpq.br/1CFTAR4U7IRKOJQK,ATIVO,
+Vinicius Silva,viniciussilva816@fatec.sp.gov.br,ESPECIALISTA,303,PES_I_C,https://lattes.cnpq.br/9BUD9W52PN430TGC,ATIVO,Professor em avaliação
+Camila Souza,camilasouza879@fatec.sp.gov.br,MESTRE,216,PES_I_A,https://lattes.cnpq.br/0E0M6LOM7W9HNSMU,ATIVO,Professor em avaliação
+Pedro Oliveira,pedrooliveira240@fatec.sp.gov.br,DOUTOR,232,PES_II_A,https://lattes.cnpq.br/2647KDN62XCWE9RG,AFASTADO,Liberado para alocação
+Fernanda Costa,fernandacosta366@fatec.sp.gov.br,ESPECIALISTA,062,PES_III_A,https://lattes.cnpq.br/JY2DZLVJMJORFNW5,AFASTADO,
+Beatriz Barbosa,beatrizbarbosa700@fatec.sp.gov.br,ESPECIALISTA,276,PES_I_A,https://lattes.cnpq.br/RCHZR36S599AB9TA,NAO_ATIVO,
+Juliana Silva,julianasilva575@fatec.sp.gov.br,DOUTOR,303,PES_II_A,https://lattes.cnpq.br/JSK47FMLQO4DZBEF,ATIVO,Professor em avaliação
+Camila Souza,camilasouza736@fatec.sp.gov.br,MESTRE,159,PES_I_C,https://lattes.cnpq.br/W0L7Q19GAA9FP7TT,ATIVO,
+João Almeida,joãoalmeida462@fatec.sp.gov.br,DOUTOR,216,PES_I_B,https://lattes.cnpq.br/EMVEHHGCLM1WAZ7Y,ATIVO,
+Marina Pereira,marinapereira921@fatec.sp.gov.br,ESPECIALISTA,169,PES_I_A,https://lattes.cnpq.br/5NZAJFA4D6GXW1HH,NAO_ATIVO,
+Beatriz Pereira,beatrizpereira326@gmail.com,DOUTOR,081,PES_I_A,https://lattes.cnpq.br/SFAV1F4V3QCYHOKZ,ATIVO,Professor em avaliação
+Eduardo Silva,eduardosilva120@gmail.com,MESTRE,169,PES_I_C,https://lattes.cnpq.br/3RE963L15SBGGTUE,ATIVO,
+Beatriz Barbosa,beatrizbarbosa892@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_A,https://lattes.cnpq.br/QJHIX155WZL7XGF8,AFASTADO,Liberado para alocação
+Marina Souza,marinasouza527@fatec.sp.gov.br,DOUTOR,121,PES_III_B,https://lattes.cnpq.br/367281EKYFBCZYY9,ATIVO,
+Carlos Rodrigues,carlosrodrigues335@fatec.sp.gov.br,DOUTOR,308,PES_I_A,https://lattes.cnpq.br/776W3Y18LEAOYGOC,ATIVO,
+Marina Pereira,marinapereira582@fatec.sp.gov.br,MESTRE,145,PES_I_C,https://lattes.cnpq.br/1QQP6P5LLK4VFJQC,LICENCA,Professor em avaliação
+Camila Silva,camilasilva746@fatec.sp.gov.br,MESTRE,120,PES_I_C,https://lattes.cnpq.br/5UFENXHCQFDQ6D49,LICENCA,Experiência internacional
+Vinicius Oliveira,viniciusoliveira673@fatec.sp.gov.br,DOUTOR,325,PES_I_A,https://lattes.cnpq.br/FHHN8Z3BS2P4DTER,NAO_ATIVO,
+Lucas Almeida,lucasalmeida609@fatec.sp.gov.br,ESPECIALISTA,020,PES_I_A,https://lattes.cnpq.br/MGB0X6YVOC1L97ZH,LICENCA,Liberado para alocação
+João Silva,joãosilva795@fatec.sp.gov.br,ESPECIALISTA,325,PES_I_B,https://lattes.cnpq.br/VAGJZCZLGFU2TG1Z,AFASTADO,Liberado para alocação
+Juliana Silva,julianasilva273@fatec.sp.gov.br,ESPECIALISTA,308,PES_III_A,https://lattes.cnpq.br/I6CGPV0T4CQFNYLV,LICENCA,Professor em avaliação
+Beatriz Rodrigues,beatrizrodrigues992@gmail.com,MESTRE,159,PES_II_B,https://lattes.cnpq.br/GVACV78FQN2DLTYQ,AFASTADO,Liberado para alocação
+Mateus Oliveira,mateusoliveira609@gmail.com,DOUTOR,081,PES_III_A,https://lattes.cnpq.br/XZXZJPSALLREP3NI,AFASTADO,
+Juliana Costa,julianacosta651@fatec.sp.gov.br,MESTRE,051,PES_I_C,https://lattes.cnpq.br/LKP6I2UWKWJ6XZXE,ATIVO,Professor em avaliação
+Larissa Rodrigues,larissarodrigues160@gmail.com,MESTRE,241,PES_III_A,https://lattes.cnpq.br/CZQ1N3IQ4PGX6KPZ,AFASTADO,
+Carlos Rodrigues,carlosrodrigues643@fatec.sp.gov.br,MESTRE,011,PES_I_C,https://lattes.cnpq.br/KEFUJG1XXWEXQOC5,AFASTADO,
+Mateus Souza,mateussouza228@gmail.com,ESPECIALISTA,109,PES_III_B,https://lattes.cnpq.br/D73BPXIEENNI4TQ6,NAO_ATIVO,Experiência internacional
+Ana Silva,anasilva222@fatec.sp.gov.br,ESPECIALISTA,241,PES_I_B,https://lattes.cnpq.br/87M79IK634ZYYC0I,LICENCA,Experiência internacional
+Carlos Costa,carloscosta930@fatec.sp.gov.br,DOUTOR,145,PES_I_A,https://lattes.cnpq.br/CQXCGIKIDC9QJFJH,NAO_ATIVO,Experiência internacional
+Marina Oliveira,marinaoliveira957@fatec.sp.gov.br,DOUTOR,308,PES_II_A,https://lattes.cnpq.br/V6M0VMHKEAJQT7JB,AFASTADO,
+Carlos Pereira,carlospereira882@fatec.sp.gov.br,MESTRE,319,PES_I_C,https://lattes.cnpq.br/AC0SFCL3XTI63E48,ATIVO,
+Fernanda Silva,fernandasilva428@fatec.sp.gov.br,MESTRE,175,PES_I_C,https://lattes.cnpq.br/WX4MRA49FRG76GO2,ATIVO,Professor em avaliação
+Carlos Rodrigues,carlosrodrigues901@fatec.sp.gov.br,MESTRE,324,PES_II_B,https://lattes.cnpq.br/CY5Q1J80YVOYKZ1Z,NAO_ATIVO,Professor em avaliação
+Larissa Pereira,larissapereira424@fatec.sp.gov.br,MESTRE,166,PES_I_B,https://lattes.cnpq.br/XKMG521V4MTIONYF,LICENCA,Professor em avaliação
+Ana Barbosa,anabarbosa537@gmail.com,DOUTOR,081,PES_II_A,https://lattes.cnpq.br/WROY86VWYZPFP5G1,ATIVO,
+Marina Costa,marinacosta582@fatec.sp.gov.br,MESTRE,324,PES_II_A,https://lattes.cnpq.br/ZY04UMKPPUC7H45F,AFASTADO,
+Lucas Costa,lucascosta697@fatec.sp.gov.br,ESPECIALISTA,282,PES_II_B,https://lattes.cnpq.br/YL79OS75OWEUZT4D,ATIVO,Professor em avaliação
+Beatriz Almeida,beatrizalmeida891@fatec.sp.gov.br,DOUTOR,196,PES_I_A,https://lattes.cnpq.br/N8OE5UF7GSCSPKDE,ATIVO,
+Fernanda Barbosa,fernandabarbosa180@fatec.sp.gov.br,ESPECIALISTA,166,PES_II_A,https://lattes.cnpq.br/911ZWW03QVN1PWP9,ATIVO,
+Pedro Pereira,pedropereira258@fatec.sp.gov.br,DOUTOR,120,PES_III_A,https://lattes.cnpq.br/FPARBJPI3G7Z1FH2,LICENCA,Professor em avaliação
+Mateus Silva,mateussilva710@fatec.sp.gov.br,ESPECIALISTA,175,PES_I_A,https://lattes.cnpq.br/NTY5LLWYEF6L2DCN,LICENCA,Experiência internacional
+Marina Silva,marinasilva958@fatec.sp.gov.br,ESPECIALISTA,196,PES_III_A,https://lattes.cnpq.br/KZM92GRMJ8WRYEPU,LICENCA,Liberado para alocação
+Mateus Oliveira,mateusoliveira186@fatec.sp.gov.br,MESTRE,145,PES_III_A,https://lattes.cnpq.br/M2RI9HM1F28X1IBD,ATIVO,Professor em avaliação
+Pedro Pereira,pedropereira887@fatec.sp.gov.br,MESTRE,062,PES_II_B,https://lattes.cnpq.br/79I0O1VW4JGHDI1R,AFASTADO,Liberado para alocação
+Juliana Oliveira,julianaoliveira132@fatec.sp.gov.br,MESTRE,276,PES_II_B,https://lattes.cnpq.br/JFZXWADPZRVG9PFM,ATIVO,Professor em avaliação
+Carlos Rodrigues,carlosrodrigues620@fatec.sp.gov.br,MESTRE,319,PES_II_B,https://lattes.cnpq.br/LRXTBINX13E7JCK5,ATIVO,
+João Oliveira,joãooliveira837@fatec.sp.gov.br,DOUTOR,145,PES_I_A,https://lattes.cnpq.br/OZ4JMW2DWFDJ8XTN,ATIVO,
+João Pereira,joãopereira357@fatec.sp.gov.br,DOUTOR,109,PES_II_A,https://lattes.cnpq.br/O4Q5QR01MJGKE3LW,ATIVO,
+Vinicius Oliveira,viniciusoliveira850@gmail.com,DOUTOR,321,PES_I_A,https://lattes.cnpq.br/NPKO7L8OXKQD5UM8,ATIVO,
+Vinicius Costa,viniciuscosta887@fatec.sp.gov.br,MESTRE,321,PES_I_C,https://lattes.cnpq.br/OA8NHBTYXYQ1EW70,ATIVO,
+Camila Costa,camilacosta793@fatec.sp.gov.br,MESTRE,120,PES_II_B,https://lattes.cnpq.br/XGNCMH5JIAKFSAKO,LICENCA,Professor em avaliação
+João Souza,joãosouza542@fatec.sp.gov.br,DOUTOR,308,PES_I_B,https://lattes.cnpq.br/DOQXU01J4U7ZB74G,LICENCA,Liberado para alocação
+Larissa Souza,larissasouza231@fatec.sp.gov.br,MESTRE,325,PES_II_B,https://lattes.cnpq.br/0PYKOX8U7JCPVPPM,ATIVO,
+Lucas Costa,lucascosta840@fatec.sp.gov.br,DOUTOR,319,PES_I_A,https://lattes.cnpq.br/B2HXD5UQ8HN37942,AFASTADO,
+Juliana Almeida,julianaalmeida340@fatec.sp.gov.br,DOUTOR,324,PES_I_A,https://lattes.cnpq.br/ZVRLROE86JFR1PTH,ATIVO,
+Ana Pereira,anapereira206@fatec.sp.gov.br,ESPECIALISTA,216,PES_II_B,https://lattes.cnpq.br/S6162RDICF42FK08,AFASTADO,
+Larissa Almeida,larissaalmeida884@fatec.sp.gov.br,MESTRE,081,PES_III_A,https://lattes.cnpq.br/XYK1KUNN1ESACTSN,AFASTADO,
+Juliana Rodrigues,julianarodrigues589@fatec.sp.gov.br,MESTRE,319,PES_I_C,https://lattes.cnpq.br/QLFWX78RNVNZBVS5,LICENCA,Liberado para alocação
+João Pereira,joãopereira574@fatec.sp.gov.br,MESTRE,011,PES_II_B,https://lattes.cnpq.br/L5GT30NNXIM84TF4,NAO_ATIVO,Experiência internacional
+Marina Costa,marinacosta923@fatec.sp.gov.br,DOUTOR,324,PES_I_B,https://lattes.cnpq.br/WG0IZISOMZZUE5HB,ATIVO,Professor em avaliação
+Fernanda Pereira,fernandapereira893@fatec.sp.gov.br,MESTRE,081,PES_I_A,https://lattes.cnpq.br/D6YUTQ1SLMRSEMNH,LICENCA,Liberado para alocação
+Eduardo Pereira,eduardopereira616@fatec.sp.gov.br,DOUTOR,276,PES_III_A,https://lattes.cnpq.br/KWT25HTROKD2UMEA,ATIVO,
+Vinicius Rodrigues,viniciusrodrigues975@fatec.sp.gov.br,MESTRE,175,PES_II_B,https://lattes.cnpq.br/69XI23NC6Q69AUYV,AFASTADO,Liberado para alocação
+Mateus Costa,mateuscosta776@fatec.sp.gov.br,ESPECIALISTA,276,PES_III_A,https://lattes.cnpq.br/2PR69PHYN2QC576C,LICENCA,Professor em avaliação
+Ana Souza,anasouza490@fatec.sp.gov.br,MESTRE,282,PES_I_C,https://lattes.cnpq.br/UYKP9WMSXUWXGCND,ATIVO,Professor em avaliação
+Eduardo Silva,eduardosilva722@fatec.sp.gov.br,MESTRE,175,PES_I_A,https://lattes.cnpq.br/8XYCL24TWH2XNTME,ATIVO,
+Camila Pereira,camilapereira139@fatec.sp.gov.br,DOUTOR,009,PES_II_B,https://lattes.cnpq.br/2JQU95RGPVLW387V,AFASTADO,Liberado para alocação
+Vinicius Oliveira,viniciusoliveira506@fatec.sp.gov.br,ESPECIALISTA,276,PES_I_A,https://lattes.cnpq.br/V0F2K3NZIKFP39WQ,NAO_ATIVO,Professor em avaliação
+Lucas Oliveira,lucasoliveira447@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_C,https://lattes.cnpq.br/96Z09PZ5M8EJ3CJV,ATIVO,
+Juliana Costa,julianacosta623@fatec.sp.gov.br,ESPECIALISTA,051,PES_I_B,https://lattes.cnpq.br/WRU4FIAGM4Y713DM,LICENCA,Professor em avaliação
+Fernanda Souza,fernandasouza890@gmail.com,DOUTOR,188,PES_I_A,https://lattes.cnpq.br/ZMX6NIV05CZDS53C,ATIVO,Professor em avaliação
+João Souza,joãosouza573@fatec.sp.gov.br,MESTRE,303,PES_III_A,https://lattes.cnpq.br/U28Q0YN7N2RU9GHJ,ATIVO,
+Camila Almeida,camilaalmeida604@fatec.sp.gov.br,MESTRE,169,PES_II_B,https://lattes.cnpq.br/JC36X5K3KSWPAJ2Y,AFASTADO,
+Pedro Costa,pedrocosta467@fatec.sp.gov.br,DOUTOR,308,PES_II_A,https://lattes.cnpq.br/5FTRP5O6RH43KYJP,AFASTADO,
+Vinicius Oliveira,viniciusoliveira736@fatec.sp.gov.br,ESPECIALISTA,291,PES_I_A,https://lattes.cnpq.br/QVMP18IOM977XL4S,AFASTADO,
+Carlos Silva,carlossilva349@gmail.com,DOUTOR,241,PES_I_B,https://lattes.cnpq.br/QK2PP5ZDB5OQZC6M,ATIVO,
+Marina Barbosa,marinabarbosa297@fatec.sp.gov.br,MESTRE,291,PES_I_A,https://lattes.cnpq.br/BM07HYHTABSNHBPM,ATIVO,
+Carlos Pereira,carlospereira910@fatec.sp.gov.br,ESPECIALISTA,232,PES_I_A,https://lattes.cnpq.br/3JBW9BSQ6NU5TFX9,LICENCA,Liberado para alocação
+Camila Pereira,camilapereira140@fatec.sp.gov.br,DOUTOR,121,PES_II_A,https://lattes.cnpq.br/CIGUL42KY660VSP8,ATIVO,Professor em avaliação
+Carlos Almeida,carlosalmeida853@fatec.sp.gov.br,DOUTOR,188,PES_II_A,https://lattes.cnpq.br/NQLI4UE05R09RXYA,LICENCA,Professor em avaliação
+Carlos Almeida,carlosalmeida826@fatec.sp.gov.br,DOUTOR,308,PES_II_A,https://lattes.cnpq.br/4G6ZIBDMSO8YX3VH,ATIVO,
+Beatriz Costa,beatrizcosta602@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_A,https://lattes.cnpq.br/TLRS47XXAM37A0EG,ATIVO,Professor em avaliação
+Beatriz Costa,beatrizcosta477@gmail.com,MESTRE,232,PES_III_A,https://lattes.cnpq.br/U6WCOBS5JBYJUYOL,ATIVO,Professor em avaliação
+Larissa Silva,larissasilva706@gmail.com,MESTRE,291,PES_I_A,https://lattes.cnpq.br/EZ6LSFB66VOJCJX6,LICENCA,Experiência internacional
+Eduardo Almeida,eduardoalmeida530@fatec.sp.gov.br,DOUTOR,241,PES_I_B,https://lattes.cnpq.br/F1KH8G78RDK5POFR,NAO_ATIVO,
+Mateus Souza,mateussouza973@fatec.sp.gov.br,ESPECIALISTA,321,PES_II_A,https://lattes.cnpq.br/ZCHEP4KDBEZWE6MT,ATIVO,
+Lucas Barbosa,lucasbarbosa364@fatec.sp.gov.br,ESPECIALISTA,175,PES_I_A,https://lattes.cnpq.br/1H55Z4B4O5YS6W7D,ATIVO,Professor em avaliação
+Lucas Souza,lucassouza570@gmail.com,DOUTOR,325,PES_I_B,https://lattes.cnpq.br/3Y5HN65G2KGISAUS,ATIVO,
+Juliana Souza,julianasouza656@fatec.sp.gov.br,MESTRE,011,PES_I_C,https://lattes.cnpq.br/DQCZ14SEZ02GZZ3Z,LICENCA,Experiência internacional
+Larissa Silva,larissasilva878@fatec.sp.gov.br,MESTRE,081,PES_I_A,https://lattes.cnpq.br/O33QQWZ9A6VTPGGI,AFASTADO,
+João Rodrigues,joãorodrigues234@fatec.sp.gov.br,MESTRE,324,PES_III_B,https://lattes.cnpq.br/MF2YWBR7ML22KQB3,LICENCA,Professor em avaliação
+Carlos Silva,carlossilva807@fatec.sp.gov.br,DOUTOR,188,PES_III_A,https://lattes.cnpq.br/LY3Y073F674OUM62,AFASTADO,Liberado para alocação
+Juliana Barbosa,julianabarbosa324@fatec.sp.gov.br,ESPECIALISTA,188,PES_II_B,https://lattes.cnpq.br/85Y87Y75FHIPD1XL,LICENCA,Liberado para alocação
+Beatriz Almeida,beatrizalmeida452@gmail.com,DOUTOR,216,PES_II_A,https://lattes.cnpq.br/NPSF9E86BFVMT4K6,ATIVO,Professor em avaliação
+João Pereira,joãopereira605@fatec.sp.gov.br,ESPECIALISTA,085,PES_I_A,https://lattes.cnpq.br/5KY4W25NPYVL8W2C,AFASTADO,Liberado para alocação
+Mateus Silva,mateussilva784@fatec.sp.gov.br,DOUTOR,081,PES_III_A,https://lattes.cnpq.br/4G36PP7LQP0UYY3A,ATIVO,
+Beatriz Pereira,beatrizpereira181@fatec.sp.gov.br,DOUTOR,282,PES_III_A,https://lattes.cnpq.br/X5QAIAT0B0REW7MZ,ATIVO,
+Eduardo Rodrigues,eduardorodrigues196@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_B,https://lattes.cnpq.br/18FCIT3YXWK2FVDG,NAO_ATIVO,
+Fernanda Oliveira,fernandaoliveira608@gmail.com,MESTRE,303,PES_I_A,https://lattes.cnpq.br/G9AACTJQB9EXI16L,ATIVO,Professor em avaliação
+João Oliveira,joãooliveira713@fatec.sp.gov.br,MESTRE,011,PES_I_B,https://lattes.cnpq.br/ZMJ6CWHQ9Z6RYR5H,LICENCA,Experiência internacional
+Beatriz Rodrigues,beatrizrodrigues712@fatec.sp.gov.br,DOUTOR,325,PES_II_B,https://lattes.cnpq.br/V17142B9VRUK25YC,ATIVO,Professor em avaliação
+Beatriz Almeida,beatrizalmeida155@fatec.sp.gov.br,ESPECIALISTA,121,PES_II_A,https://lattes.cnpq.br/19FFJRU4QC8MIF4A,LICENCA,Experiência internacional
+João Silva,joãosilva449@gmail.com,ESPECIALISTA,175,PES_II_A,https://lattes.cnpq.br/QJKAMP5ZBPBBH8AC,ATIVO,Professor em avaliação
+Camila Barbosa,camilabarbosa315@fatec.sp.gov.br,DOUTOR,085,PES_I_B,https://lattes.cnpq.br/RGV6NFZUA6S0NQUT,ATIVO,Professor em avaliação
+Carlos Almeida,carlosalmeida160@fatec.sp.gov.br,ESPECIALISTA,159,PES_I_A,https://lattes.cnpq.br/QKYED5F3CAX0B34G,NAO_ATIVO,Experiência internacional
+Fernanda Costa,fernandacosta372@fatec.sp.gov.br,ESPECIALISTA,120,PES_I_A,https://lattes.cnpq.br/B9CSXJSY49HZGFS9,NAO_ATIVO,Professor em avaliação
+João Oliveira,joãooliveira311@fatec.sp.gov.br,MESTRE,188,PES_I_A,https://lattes.cnpq.br/8K2T3693I4DRSCRR,NAO_ATIVO,Professor em avaliação
+Beatriz Almeida,beatrizalmeida542@fatec.sp.gov.br,DOUTOR,241,PES_II_A,https://lattes.cnpq.br/A7F2UR91LGIXZGFZ,ATIVO,Professor em avaliação
+João Souza,joãosouza599@fatec.sp.gov.br,MESTRE,303,PES_I_B,https://lattes.cnpq.br/WIG805LETBKB7PKR,LICENCA,Professor em avaliação
+Lucas Costa,lucascosta486@fatec.sp.gov.br,DOUTOR,324,PES_II_B,https://lattes.cnpq.br/B7CVTK6WF8PJOP3V,LICENCA,Professor em avaliação
+Vinicius Almeida,viniciusalmeida757@fatec.sp.gov.br,DOUTOR,291,PES_I_A,https://lattes.cnpq.br/8GIFK98MV37LXKUZ,ATIVO,
+Pedro Almeida,pedroalmeida995@fatec.sp.gov.br,DOUTOR,308,PES_III_A,https://lattes.cnpq.br/J7ZDLY47UGQZY0X9,ATIVO,
+Ana Silva,anasilva184@fatec.sp.gov.br,DOUTOR,062,PES_I_B,https://lattes.cnpq.br/IO8WEX2PIOG9GW39,AFASTADO,Liberado para alocação
+Pedro Souza,pedrosouza664@fatec.sp.gov.br,DOUTOR,241,PES_II_A,https://lattes.cnpq.br/DRZ7JWN4UKKABCYL,NAO_ATIVO,
+Fernanda Souza,fernandasouza230@fatec.sp.gov.br,MESTRE,121,PES_II_B,https://lattes.cnpq.br/O00TLZOEEIUHQ3VF,ATIVO,
+Eduardo Almeida,eduardoalmeida479@gmail.com,MESTRE,169,PES_II_B,https://lattes.cnpq.br/KKJ30R7TLSNI7D3K,ATIVO,Professor em avaliação
+Eduardo Barbosa,eduardobarbosa525@fatec.sp.gov.br,ESPECIALISTA,324,PES_II_B,https://lattes.cnpq.br/XRQUBI4QUMMFP3FL,LICENCA,Liberado para alocação
+Beatriz Barbosa,beatrizbarbosa162@fatec.sp.gov.br,DOUTOR,196,PES_I_A,https://lattes.cnpq.br/C5AO63C0YRRDMO26,ATIVO,Professor em avaliação
+Pedro Almeida,pedroalmeida809@gmail.com,MESTRE,241,PES_II_B,https://lattes.cnpq.br/KUEPQ8DMXOM30JHV,ATIVO,
+Carlos Costa,carloscosta485@fatec.sp.gov.br,MESTRE,109,PES_III_B,https://lattes.cnpq.br/FI95DWZHPZIIJ0J2,LICENCA,Liberado para alocação
+Beatriz Barbosa,beatrizbarbosa507@fatec.sp.gov.br,MESTRE,319,PES_II_B,https://lattes.cnpq.br/8JSUV6T5MX2ZBQNP,ATIVO,Professor em avaliação
+Fernanda Silva,fernandasilva712@fatec.sp.gov.br,ESPECIALISTA,166,PES_I_A,https://lattes.cnpq.br/6UYHJYW6EFGUAYOO,AFASTADO,
+Camila Oliveira,camilaoliveira683@fatec.sp.gov.br,DOUTOR,081,PES_I_A,https://lattes.cnpq.br/V559Y2ZFDDEHR1UO,LICENCA,Professor em avaliação
+Marina Rodrigues,marinarodrigues821@fatec.sp.gov.br,MESTRE,319,PES_I_B,https://lattes.cnpq.br/1PRHQG7EJ3TI6WYL,ATIVO,Professor em avaliação
+Eduardo Oliveira,eduardooliveira430@fatec.sp.gov.br,MESTRE,159,PES_II_B,https://lattes.cnpq.br/ICPDXF98QBZM51QX,ATIVO,Professor em avaliação
+Vinicius Costa,viniciuscosta689@fatec.sp.gov.br,ESPECIALISTA,241,PES_II_A,https://lattes.cnpq.br/TIQHN9FA6HXIZ1SG,ATIVO,
+João Costa,joãocosta260@fatec.sp.gov.br,MESTRE,120,PES_II_B,https://lattes.cnpq.br/ZZZMTOQ1VK4AHL3G,AFASTADO,
+Beatriz Pereira,beatrizpereira173@fatec.sp.gov.br,MESTRE,169,PES_I_B,https://lattes.cnpq.br/QCZA5EB1NW6A0QOQ,ATIVO,
+Beatriz Rodrigues,beatrizrodrigues745@fatec.sp.gov.br,MESTRE,121,PES_I_A,https://lattes.cnpq.br/36TJ4Z0VEKOVZ9M8,ATIVO,Professor em avaliação
+Eduardo Costa,eduardocosta143@fatec.sp.gov.br,ESPECIALISTA,062,PES_I_C,https://lattes.cnpq.br/YCDM08LRNDDHWZMJ,ATIVO,
+João Almeida,joãoalmeida148@fatec.sp.gov.br,MESTRE,282,PES_II_B,https://lattes.cnpq.br/A0O5JONLGZXU58IP,LICENCA,Professor em avaliação
+Carlos Rodrigues,carlosrodrigues401@fatec.sp.gov.br,MESTRE,282,PES_I_A,https://lattes.cnpq.br/2BLJATIKBN0LVNTN,AFASTADO,
+Camila Almeida,camilaalmeida519@fatec.sp.gov.br,MESTRE,319,PES_II_B,https://lattes.cnpq.br/R2ZSJSMXGOJOCUL3,ATIVO,
+Carlos Oliveira,carlosoliveira539@gmail.com,MESTRE,121,PES_III_B,https://lattes.cnpq.br/BVJ8Y9805M0S9O4J,ATIVO,Professor em avaliação
+Beatriz Souza,beatrizsouza638@fatec.sp.gov.br,MESTRE,020,PES_I_A,https://lattes.cnpq.br/PSLZPEU47D35ZI52,AFASTADO,
+Vinicius Silva,viniciussilva453@fatec.sp.gov.br,MESTRE,175,PES_II_A,https://lattes.cnpq.br/Q7KFGUPM71CVP7A5,AFASTADO,
+Juliana Oliveira,julianaoliveira584@fatec.sp.gov.br,ESPECIALISTA,303,PES_I_A,https://lattes.cnpq.br/I10EY89IWCYUYVGI,ATIVO,Professor em avaliação
+Lucas Pereira,lucaspereira569@fatec.sp.gov.br,MESTRE,145,PES_II_B,https://lattes.cnpq.br/DJ60WKZ0U6JDXOJ7,ATIVO,
+João Pereira,joãopereira790@fatec.sp.gov.br,ESPECIALISTA,291,PES_I_B,https://lattes.cnpq.br/WHMU1HEKBDK8PIJT,ATIVO,
+Eduardo Barbosa,eduardobarbosa221@fatec.sp.gov.br,MESTRE,216,PES_I_A,https://lattes.cnpq.br/XDOWM29YP7NKMBJ0,LICENCA,Liberado para alocação
+João Souza,joãosouza157@fatec.sp.gov.br,DOUTOR,011,PES_I_B,https://lattes.cnpq.br/5VQEKKM8NBEGWAB6,NAO_ATIVO,Experiência internacional
+Ana Barbosa,anabarbosa606@fatec.sp.gov.br,MESTRE,020,PES_I_C,https://lattes.cnpq.br/4Y1W4ALW27NATUTZ,ATIVO,
+Carlos Almeida,carlosalmeida359@fatec.sp.gov.br,DOUTOR,220,PES_II_B,https://lattes.cnpq.br/I83KTC20D2FSEVWQ,ATIVO,
+Camila Barbosa,camilabarbosa820@fatec.sp.gov.br,MESTRE,109,PES_I_A,https://lattes.cnpq.br/FU98O9BYSHL0IRE1,ATIVO,Professor em avaliação
+Larissa Pereira,larissapereira522@fatec.sp.gov.br,ESPECIALISTA,109,PES_III_A,https://lattes.cnpq.br/GR8RTJ1AFQK8AND8,LICENCA,Experiência internacional
+Carlos Pereira,carlospereira739@fatec.sp.gov.br,MESTRE,276,PES_I_C,https://lattes.cnpq.br/CVNIHYIXSVDPXPT8,ATIVO,Professor em avaliação
+Pedro Rodrigues,pedrorodrigues782@fatec.sp.gov.br,DOUTOR,325,PES_III_A,https://lattes.cnpq.br/QPCVTA367X8O1LBW,AFASTADO,Liberado para alocação
+Marina Silva,marinasilva321@gmail.com,MESTRE,145,PES_I_C,https://lattes.cnpq.br/KIYEEE9NNCDVITXX,ATIVO,Professor em avaliação
+Vinicius Souza,viniciussouza286@fatec.sp.gov.br,MESTRE,109,PES_II_B,https://lattes.cnpq.br/U2Q2ALGNUPB5BS0O,AFASTADO,
+Mateus Silva,mateussilva211@fatec.sp.gov.br,DOUTOR,325,PES_II_A,https://lattes.cnpq.br/S3IZ3M4QU9Y0OMSV,ATIVO,Professor em avaliação
+Beatriz Oliveira,beatrizoliveira354@fatec.sp.gov.br,MESTRE,169,PES_I_C,https://lattes.cnpq.br/NQ7OCVI5HX67NIOC,AFASTADO,Liberado para alocação
+Larissa Almeida,larissaalmeida341@fatec.sp.gov.br,DOUTOR,109,PES_II_B,https://lattes.cnpq.br/RKDHHR62G1C6063K,ATIVO,Professor em avaliação
+Larissa Souza,larissasouza783@fatec.sp.gov.br,MESTRE,145,PES_II_B,https://lattes.cnpq.br/HS09U0W3374USR0H,AFASTADO,Liberado para alocação
+Lucas Silva,lucassilva484@fatec.sp.gov.br,DOUTOR,188,PES_II_A,https://lattes.cnpq.br/V7A2B0YYY7B35VKV,ATIVO,
+Larissa Barbosa,larissabarbosa932@gmail.com,DOUTOR,120,PES_I_C,https://lattes.cnpq.br/XXQU9KX0SIWJUVGW,ATIVO,Professor em avaliação
+Beatriz Barbosa,beatrizbarbosa117@fatec.sp.gov.br,MESTRE,121,PES_I_A,https://lattes.cnpq.br/CR87XZI9K8Z1Y8T8,ATIVO,
+Mateus Rodrigues,mateusrodrigues389@fatec.sp.gov.br,ESPECIALISTA,232,PES_I_A,https://lattes.cnpq.br/7V1E82W0HL8HVYZF,NAO_ATIVO,Experiência internacional
+Lucas Almeida,lucasalmeida784@fatec.sp.gov.br,MESTRE,009,PES_II_A,https://lattes.cnpq.br/XG2JNEACBQ7D7UZE,AFASTADO,
+Juliana Souza,julianasouza439@fatec.sp.gov.br,MESTRE,011,PES_I_A,https://lattes.cnpq.br/079KA8O5GTSXEPI5,LICENCA,Experiência internacional
+Juliana Almeida,julianaalmeida662@fatec.sp.gov.br,DOUTOR,303,PES_II_A,https://lattes.cnpq.br/AUGV2TNF936WXZPF,NAO_ATIVO,Professor em avaliação
+Vinicius Silva,viniciussilva671@fatec.sp.gov.br,DOUTOR,308,PES_II_A,https://lattes.cnpq.br/0E0YQ4KOFTXIACMV,NAO_ATIVO,Experiência internacional
+Marina Pereira,marinapereira947@fatec.sp.gov.br,ESPECIALISTA,308,PES_I_B,https://lattes.cnpq.br/89P9YGGUO8E7SY3R,NAO_ATIVO,Experiência internacional
+Lucas Pereira,lucaspereira435@fatec.sp.gov.br,MESTRE,011,PES_I_A,https://lattes.cnpq.br/4VAD8CA0H9193P27,AFASTADO,
+Carlos Costa,carloscosta117@fatec.sp.gov.br,DOUTOR,120,PES_III_A,https://lattes.cnpq.br/HET8BYPV37343JHW,LICENCA,Professor em avaliação
+Vinicius Barbosa,viniciusbarbosa996@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_B,https://lattes.cnpq.br/KOIPIPNAWYHHWLTA,ATIVO,Professor em avaliação
+Beatriz Oliveira,beatrizoliveira736@gmail.com,DOUTOR,145,PES_I_B,https://lattes.cnpq.br/LXK6ISPMEXFH1EZQ,AFASTADO,
+Fernanda Barbosa,fernandabarbosa564@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_C,https://lattes.cnpq.br/QRBH04F4V4AVDJCB,ATIVO,
+Eduardo Oliveira,eduardooliveira541@gmail.com,ESPECIALISTA,325,PES_II_B,https://lattes.cnpq.br/MJEPD45IJQCL6H05,ATIVO,Professor em avaliação
+Pedro Oliveira,pedrooliveira587@fatec.sp.gov.br,ESPECIALISTA,303,PES_II_A,https://lattes.cnpq.br/R01D174FL4R2YR6C,LICENCA,Experiência internacional
+Lucas Costa,lucascosta608@gmail.com,MESTRE,062,PES_II_B,https://lattes.cnpq.br/Q8Z2V2MJ5AVL59QU,AFASTADO,
+Vinicius Oliveira,viniciusoliveira948@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_C,https://lattes.cnpq.br/K6JZ7KCMABMT9T1R,LICENCA,Liberado para alocação
+Eduardo Rodrigues,eduardorodrigues307@fatec.sp.gov.br,DOUTOR,196,PES_I_A,https://lattes.cnpq.br/N21Y0AUU2ZTNBUDQ,AFASTADO,
+Juliana Barbosa,julianabarbosa335@gmail.com,DOUTOR,166,PES_I_A,https://lattes.cnpq.br/SBV8PK7K6LMZ1NKC,ATIVO,
+Lucas Pereira,lucaspereira950@fatec.sp.gov.br,ESPECIALISTA,062,PES_II_A,https://lattes.cnpq.br/A2RNE9V3TBF10ZL8,ATIVO,
+Eduardo Barbosa,eduardobarbosa265@fatec.sp.gov.br,DOUTOR,121,PES_I_A,https://lattes.cnpq.br/TXVT02NWCZZQRIH4,AFASTADO,Liberado para alocação
+Vinicius Almeida,viniciusalmeida799@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_C,https://lattes.cnpq.br/GW0C0FR0G3JY9N7F,AFASTADO,Liberado para alocação
+Ana Costa,anacosta694@fatec.sp.gov.br,ESPECIALISTA,085,PES_I_A,https://lattes.cnpq.br/0QC9DVKMNZHZUYW7,LICENCA,Experiência internacional
+Eduardo Silva,eduardosilva515@fatec.sp.gov.br,MESTRE,220,PES_I_B,https://lattes.cnpq.br/ON7UT3ITQ7K3N84E,ATIVO,
+Carlos Souza,carlossouza893@fatec.sp.gov.br,MESTRE,109,PES_II_B,https://lattes.cnpq.br/83P2GYOA4VTOTF4P,AFASTADO,Liberado para alocação
+Larissa Silva,larissasilva295@fatec.sp.gov.br,ESPECIALISTA,062,PES_I_A,https://lattes.cnpq.br/PQE8C3JM9H5N50PC,ATIVO,
+João Pereira,joãopereira902@fatec.sp.gov.br,DOUTOR,009,PES_I_B,https://lattes.cnpq.br/YR3I00D3CBEJRK24,AFASTADO,
+Camila Barbosa,camilabarbosa553@fatec.sp.gov.br,ESPECIALISTA,291,PES_II_A,https://lattes.cnpq.br/X83ZTHQOHVOSEVUW,ATIVO,
+Eduardo Oliveira,eduardooliveira553@fatec.sp.gov.br,DOUTOR,159,PES_I_A,https://lattes.cnpq.br/NW6MAFAD0CQTRFTR,ATIVO,
+Carlos Silva,carlossilva469@fatec.sp.gov.br,ESPECIALISTA,175,PES_II_A,https://lattes.cnpq.br/WJUNW9PTNH9YA01J,LICENCA,Liberado para alocação
+Lucas Barbosa,lucasbarbosa150@fatec.sp.gov.br,DOUTOR,109,PES_III_B,https://lattes.cnpq.br/LM4WNN82EYS0LVCX,ATIVO,
+Camila Oliveira,camilaoliveira460@fatec.sp.gov.br,ESPECIALISTA,303,PES_III_A,https://lattes.cnpq.br/B0TDW2HM18KXYIR0,ATIVO,Professor em avaliação
+Ana Oliveira,anaoliveira619@fatec.sp.gov.br,DOUTOR,175,PES_II_A,https://lattes.cnpq.br/XZQXRDVISJ7Q2XM8,ATIVO,Professor em avaliação
+João Pereira,joãopereira455@fatec.sp.gov.br,DOUTOR,120,PES_I_B,https://lattes.cnpq.br/Z9ECMD8VC48PMJTB,AFASTADO,
+Ana Oliveira,anaoliveira350@fatec.sp.gov.br,MESTRE,121,PES_III_A,https://lattes.cnpq.br/D21ZYZ41TVZB50EG,AFASTADO,Liberado para alocação
+Ana Costa,anacosta244@gmail.com,ESPECIALISTA,120,PES_I_A,https://lattes.cnpq.br/6AU1KXJTC0FLXK2N,AFASTADO,
+João Souza,joãosouza145@fatec.sp.gov.br,ESPECIALISTA,220,PES_II_A,https://lattes.cnpq.br/1SE9JM2I4CDPKF9N,LICENCA,Experiência internacional
+Ana Silva,anasilva578@fatec.sp.gov.br,DOUTOR,011,PES_III_A,https://lattes.cnpq.br/5K7G6HQ0KHZ90UL5,ATIVO,
+Juliana Oliveira,julianaoliveira420@fatec.sp.gov.br,DOUTOR,232,PES_I_A,https://lattes.cnpq.br/V4NVHZUY1IK5CQ7H,AFASTADO,
+Juliana Silva,julianasilva864@fatec.sp.gov.br,MESTRE,081,PES_III_A,https://lattes.cnpq.br/QD4RL330RNW2YBRP,ATIVO,Professor em avaliação
+Ana Pereira,anapereira636@fatec.sp.gov.br,ESPECIALISTA,169,PES_II_A,https://lattes.cnpq.br/GYGTAJRNVL7ATJ9N,ATIVO,
+Pedro Almeida,pedroalmeida433@fatec.sp.gov.br,DOUTOR,321,PES_III_B,https://lattes.cnpq.br/TDZBUFQAUT4LT9QD,ATIVO,
+Marina Pereira,marinapereira775@fatec.sp.gov.br,MESTRE,159,PES_I_C,https://lattes.cnpq.br/LX24KMY7MZAU0U1N,ATIVO,
+Eduardo Barbosa,eduardobarbosa941@fatec.sp.gov.br,ESPECIALISTA,308,PES_III_B,https://lattes.cnpq.br/AU9BVJLDEEIS1ZZY,AFASTADO,Liberado para alocação
+Carlos Silva,carlossilva954@fatec.sp.gov.br,DOUTOR,166,PES_I_B,https://lattes.cnpq.br/6Z6PW0RRQ50BD5NV,ATIVO,Professor em avaliação
+João Silva,joãosilva815@fatec.sp.gov.br,MESTRE,282,PES_II_B,https://lattes.cnpq.br/O3BSE18JJU1E7TBY,AFASTADO,
+Camila Barbosa,camilabarbosa620@fatec.sp.gov.br,ESPECIALISTA,145,PES_II_B,https://lattes.cnpq.br/BUW76F1S38PZPDCB,ATIVO,
+Marina Rodrigues,marinarodrigues591@fatec.sp.gov.br,DOUTOR,159,PES_I_A,https://lattes.cnpq.br/NBFCXEB9M146V8A0,ATIVO,
+Marina Costa,marinacosta973@fatec.sp.gov.br,DOUTOR,321,PES_I_B,https://lattes.cnpq.br/ZM7ZKMHC4IOI6CAE,AFASTADO,Liberado para alocação
+Marina Rodrigues,marinarodrigues231@fatec.sp.gov.br,ESPECIALISTA,009,PES_I_C,https://lattes.cnpq.br/1OX4A52616H1C8O1,ATIVO,
+Beatriz Pereira,beatrizpereira337@fatec.sp.gov.br,MESTRE,282,PES_III_A,https://lattes.cnpq.br/FMYYLLJHVGQR6R8R,AFASTADO,
+Eduardo Silva,eduardosilva266@fatec.sp.gov.br,MESTRE,220,PES_I_C,https://lattes.cnpq.br/7KE5L6VZXCI4Y5UB,LICENCA,Professor em avaliação
+Fernanda Pereira,fernandapereira776@fatec.sp.gov.br,ESPECIALISTA,188,PES_I_A,https://lattes.cnpq.br/NVTYK4RCPS57X1Z6,LICENCA,Experiência internacional
+Beatriz Barbosa,beatrizbarbosa776@gmail.com,DOUTOR,232,PES_I_A,https://lattes.cnpq.br/36403BV1TCMNNMXB,ATIVO,Professor em avaliação
+João Rodrigues,joãorodrigues153@fatec.sp.gov.br,MESTRE,175,PES_II_B,https://lattes.cnpq.br/ID4TUW0UYXB0ZJPT,LICENCA,Liberado para alocação
+Vinicius Rodrigues,viniciusrodrigues123@fatec.sp.gov.br,ESPECIALISTA,109,PES_I_A,https://lattes.cnpq.br/V62HITDV957KOSX4,LICENCA,Experiência internacional
+Fernanda Souza,fernandasouza651@fatec.sp.gov.br,MESTRE,145,PES_III_B,https://lattes.cnpq.br/7VETFJ2AJPTKLFEB,LICENCA,Professor em avaliação
+Lucas Barbosa,lucasbarbosa312@fatec.sp.gov.br,DOUTOR,282,PES_III_A,https://lattes.cnpq.br/KQV09DW79IDO87KI,ATIVO,Professor em avaliação
+Fernanda Almeida,fernandaalmeida814@fatec.sp.gov.br,MESTRE,241,PES_III_A,https://lattes.cnpq.br/K7FLPA5T0PHV8UBF,ATIVO,
+Eduardo Almeida,eduardoalmeida373@fatec.sp.gov.br,MESTRE,081,PES_III_A,https://lattes.cnpq.br/Y9F793KLXB1OFENK,LICENCA,Experiência internacional
+João Costa,joãocosta790@fatec.sp.gov.br,DOUTOR,321,PES_I_A,https://lattes.cnpq.br/24LOWJDRYJQUZXBR,ATIVO,
+Camila Almeida,camilaalmeida199@fatec.sp.gov.br,DOUTOR,169,PES_I_A,https://lattes.cnpq.br/ZG045ZHJVFBT3IF1,ATIVO,Professor em avaliação
+Beatriz Rodrigues,beatrizrodrigues610@fatec.sp.gov.br,MESTRE,188,PES_I_B,https://lattes.cnpq.br/5AQB0JUYJHFA10B4,ATIVO,Professor em avaliação
+Lucas Silva,lucassilva806@fatec.sp.gov.br,MESTRE,303,PES_I_B,https://lattes.cnpq.br/KPS5QRS1R6VOSUQ2,LICENCA,Liberado para alocação
+Ana Souza,anasouza274@fatec.sp.gov.br,DOUTOR,166,PES_III_A,https://lattes.cnpq.br/Y29D34SKO9LQCOBE,ATIVO,Professor em avaliação
+Larissa Silva,larissasilva199@fatec.sp.gov.br,DOUTOR,145,PES_II_A,https://lattes.cnpq.br/XU2BBGUNHK36JD18,LICENCA,Experiência internacional
+Pedro Rodrigues,pedrorodrigues304@fatec.sp.gov.br,DOUTOR,220,PES_II_B,https://lattes.cnpq.br/P6PLAE0Z4KLHH85E,ATIVO,Professor em avaliação
+Fernanda Barbosa,fernandabarbosa383@fatec.sp.gov.br,DOUTOR,282,PES_II_A,https://lattes.cnpq.br/5M0ZR7MHGDVRP4PX,ATIVO,Professor em avaliação
+Lucas Barbosa,lucasbarbosa599@fatec.sp.gov.br,ESPECIALISTA,308,PES_I_A,https://lattes.cnpq.br/9U3BMYBQRLJ513S2,AFASTADO,Liberado para alocação
+Lucas Souza,lucassouza122@fatec.sp.gov.br,DOUTOR,325,PES_II_A,https://lattes.cnpq.br/EP1WXACE6HYPCLA0,ATIVO,Professor em avaliação
+Mateus Oliveira,mateusoliveira771@gmail.com,MESTRE,291,PES_I_C,https://lattes.cnpq.br/GISY5AMX1286N14G,LICENCA,Liberado para alocação
+Fernanda Silva,fernandasilva857@fatec.sp.gov.br,DOUTOR,169,PES_I_A,https://lattes.cnpq.br/53GNVTYIBBFKROYY,ATIVO,Professor em avaliação
+Pedro Souza,pedrosouza986@fatec.sp.gov.br,DOUTOR,276,PES_I_A,https://lattes.cnpq.br/RZYWU596RIQK3WGA,ATIVO,
+Larissa Pereira,larissapereira639@fatec.sp.gov.br,ESPECIALISTA,232,PES_II_A,https://lattes.cnpq.br/XH7OULKNGAL81VUY,LICENCA,Liberado para alocação
+Camila Silva,camilasilva567@fatec.sp.gov.br,MESTRE,085,PES_II_B,https://lattes.cnpq.br/MA8GIYKH7VBQGERR,AFASTADO,Liberado para alocação
+Carlos Silva,carlossilva484@gmail.com,ESPECIALISTA,291,PES_I_A,https://lattes.cnpq.br/RDE4BHOS9WMHTDR5,LICENCA,Experiência internacional
+Lucas Barbosa,lucasbarbosa955@fatec.sp.gov.br,MESTRE,232,PES_III_A,https://lattes.cnpq.br/BSE00UI4CXK1TZDJ,ATIVO,Professor em avaliação
+João Silva,joãosilva635@fatec.sp.gov.br,ESPECIALISTA,009,PES_II_A,https://lattes.cnpq.br/Y49OYFVKE08Q6K03,AFASTADO,
+Fernanda Almeida,fernandaalmeida274@gmail.com,ESPECIALISTA,020,PES_I_A,https://lattes.cnpq.br/I6VU4NUQVVIH8R69,ATIVO,
+Juliana Souza,julianasouza251@fatec.sp.gov.br,MESTRE,291,PES_I_B,https://lattes.cnpq.br/FSLV9QGMCO8CD611,AFASTADO,Liberado para alocação
+Vinicius Barbosa,viniciusbarbosa616@fatec.sp.gov.br,ESPECIALISTA,282,PES_I_A,https://lattes.cnpq.br/F1OMETQ1RE08QJT3,NAO_ATIVO,Experiência internacional
+Vinicius Costa,viniciuscosta202@fatec.sp.gov.br,MESTRE,308,PES_III_A,https://lattes.cnpq.br/Q7PH7704MUARSYN4,ATIVO,
+João Silva,joãosilva453@fatec.sp.gov.br,DOUTOR,321,PES_I_A,https://lattes.cnpq.br/Q5ZWYON20ITSDJ7Y,ATIVO,
+Vinicius Costa,viniciuscosta170@gmail.com,DOUTOR,308,PES_II_A,https://lattes.cnpq.br/UCCRZ0Q7WB62VQDA,ATIVO,Professor em avaliação
+Camila Costa,camilacosta176@fatec.sp.gov.br,DOUTOR,321,PES_II_B,https://lattes.cnpq.br/MH6BQTMMGLTF0Y5I,AFASTADO,
+Juliana Souza,julianasouza481@fatec.sp.gov.br,ESPECIALISTA,145,PES_II_A,https://lattes.cnpq.br/LAHS6YJRKE81D8IP,LICENCA,Professor em avaliação
+Mateus Souza,mateussouza450@fatec.sp.gov.br,ESPECIALISTA,188,PES_III_B,https://lattes.cnpq.br/F9QNNDSKAJZKOX1O,NAO_ATIVO,Professor em avaliação
+Pedro Almeida,pedroalmeida742@fatec.sp.gov.br,MESTRE,121,PES_III_B,https://lattes.cnpq.br/1MKNI6WOZMZWVACD,ATIVO,Professor em avaliação
+Ana Rodrigues,anarodrigues502@gmail.com,DOUTOR,011,PES_III_A,https://lattes.cnpq.br/VIWQL0A4IMRNJ26A,ATIVO,
+Lucas Silva,lucassilva350@fatec.sp.gov.br,ESPECIALISTA,321,PES_I_B,https://lattes.cnpq.br/FU2OYBMI1GO57B88,AFASTADO,
+Pedro Souza,pedrosouza984@gmail.com,ESPECIALISTA,291,PES_I_C,https://lattes.cnpq.br/PPTW6ES4RBFZ10SF,LICENCA,Professor em avaliação
+Lucas Rodrigues,lucasrodrigues453@fatec.sp.gov.br,MESTRE,011,PES_III_A,https://lattes.cnpq.br/0FF05R59H0NPE2TD,NAO_ATIVO,
+Larissa Silva,larissasilva513@fatec.sp.gov.br,MESTRE,011,PES_II_B,https://lattes.cnpq.br/3EMVBN0QYV85501G,ATIVO,
+Eduardo Barbosa,eduardobarbosa392@gmail.com,ESPECIALISTA,276,PES_II_B,https://lattes.cnpq.br/3BLH2QMQI3IAJDNI,AFASTADO,
+Carlos Oliveira,carlosoliveira764@fatec.sp.gov.br,ESPECIALISTA,169,PES_I_A,https://lattes.cnpq.br/0AD4Z92Y3L8VQVA4,LICENCA,Liberado para alocação
+Eduardo Silva,eduardosilva461@fatec.sp.gov.br,MESTRE,308,PES_II_A,https://lattes.cnpq.br/IY5CFQVNUEME5N8B,ATIVO,Professor em avaliação
+Pedro Souza,pedrosouza134@fatec.sp.gov.br,MESTRE,324,PES_I_A,https://lattes.cnpq.br/JKK79YJ6SP16GT04,AFASTADO,Liberado para alocação
+Carlos Silva,carlossilva956@fatec.sp.gov.br,MESTRE,166,PES_II_A,https://lattes.cnpq.br/EBXS08OBTY7TE0SW,LICENCA,Liberado para alocação
+Marina Rodrigues,marinarodrigues116@fatec.sp.gov.br,ESPECIALISTA,319,PES_I_A,https://lattes.cnpq.br/IW4WBXLE25UG0HC0,NAO_ATIVO,
+Carlos Rodrigues,carlosrodrigues107@fatec.sp.gov.br,MESTRE,020,PES_I_A,https://lattes.cnpq.br/UGHF7786KRJSYBPP,AFASTADO,
+Carlos Silva,carlossilva904@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_A,https://lattes.cnpq.br/7SNJOUV4LNQPN4RU,AFASTADO,
+Camila Almeida,camilaalmeida289@fatec.sp.gov.br,MESTRE,081,PES_I_B,https://lattes.cnpq.br/3H3JBK29599QRUKU,ATIVO,Professor em avaliação
+Lucas Oliveira,lucasoliveira989@fatec.sp.gov.br,DOUTOR,159,PES_I_B,https://lattes.cnpq.br/SE1AIFL3PO9O9KVM,ATIVO,
+Beatriz Barbosa,beatrizbarbosa475@fatec.sp.gov.br,MESTRE,324,PES_I_A,https://lattes.cnpq.br/8ONM10431OP64JRB,ATIVO,Professor em avaliação
+João Pereira,joãopereira214@fatec.sp.gov.br,DOUTOR,216,PES_III_A,https://lattes.cnpq.br/PSG3OQTKTQCF0SE1,ATIVO,
+Fernanda Rodrigues,fernandarodrigues704@fatec.sp.gov.br,DOUTOR,216,PES_I_C,https://lattes.cnpq.br/G7N3E2KEN1TRD6IG,ATIVO,Professor em avaliação
+Pedro Pereira,pedropereira735@fatec.sp.gov.br,ESPECIALISTA,120,PES_I_C,https://lattes.cnpq.br/JD16F6QZTN070F0W,ATIVO,Professor em avaliação
+Camila Souza,camilasouza863@fatec.sp.gov.br,ESPECIALISTA,159,PES_I_A,https://lattes.cnpq.br/2WKOAY5I4DYTLG8Q,NAO_ATIVO,Experiência internacional
+Mateus Barbosa,mateusbarbosa273@fatec.sp.gov.br,DOUTOR,169,PES_I_A,https://lattes.cnpq.br/WZY588QYOD6MBV2V,LICENCA,Experiência internacional
+João Pereira,joãopereira178@fatec.sp.gov.br,DOUTOR,011,PES_II_A,https://lattes.cnpq.br/AJNEO6R700MY33F1,ATIVO,Professor em avaliação
+Carlos Rodrigues,carlosrodrigues375@fatec.sp.gov.br,DOUTOR,325,PES_I_B,https://lattes.cnpq.br/GUVUGVW0Q97KZLXT,LICENCA,Liberado para alocação
+Juliana Silva,julianasilva972@fatec.sp.gov.br,DOUTOR,145,PES_II_B,https://lattes.cnpq.br/5W654OYNLT3LJT1C,LICENCA,Experiência internacional
+Camila Barbosa,camilabarbosa526@fatec.sp.gov.br,ESPECIALISTA,232,PES_III_B,https://lattes.cnpq.br/GOYPO1I7EFLU0ZMW,ATIVO,Professor em avaliação
+Fernanda Costa,fernandacosta542@fatec.sp.gov.br,MESTRE,216,PES_II_B,https://lattes.cnpq.br/9NEXUS1BL01DS5EY,AFASTADO,Liberado para alocação
+João Almeida,joãoalmeida810@fatec.sp.gov.br,DOUTOR,325,PES_II_A,https://lattes.cnpq.br/D1KUOJOGVRZQ9ZUB,AFASTADO,
+João Almeida,joãoalmeida843@fatec.sp.gov.br,ESPECIALISTA,081,PES_I_C,https://lattes.cnpq.br/HJZ689YRW0YZEK4B,NAO_ATIVO,Professor em avaliação
+Pedro Souza,pedrosouza816@fatec.sp.gov.br,DOUTOR,216,PES_II_A,https://lattes.cnpq.br/IR5I24FO9BOHK28T,AFASTADO,
+Larissa Rodrigues,larissarodrigues506@fatec.sp.gov.br,DOUTOR,169,PES_III_B,https://lattes.cnpq.br/J0U8PSS25EKELLKY,LICENCA,Experiência internacional
+Carlos Costa,carloscosta974@gmail.com,ESPECIALISTA,321,PES_II_A,https://lattes.cnpq.br/UU5TL1PJUQPPVYPK,LICENCA,Experiência internacional
+Fernanda Rodrigues,fernandarodrigues681@fatec.sp.gov.br,DOUTOR,169,PES_III_A,https://lattes.cnpq.br/AOJHJ6ZKYCM53X24,ATIVO,
+Juliana Costa,julianacosta938@fatec.sp.gov.br,DOUTOR,009,PES_II_A,https://lattes.cnpq.br/590WR4YAPUJO8OW5,LICENCA,Professor em avaliação
+João Pereira,joãopereira566@fatec.sp.gov.br,MESTRE,241,PES_I_C,https://lattes.cnpq.br/BGLQJBAPEBXN38RG,LICENCA,Liberado para alocação
+Marina Rodrigues,marinarodrigues272@fatec.sp.gov.br,ESPECIALISTA,085,PES_I_A,https://lattes.cnpq.br/780ML8VFBR19PLDY,AFASTADO,
+Mateus Barbosa,mateusbarbosa292@fatec.sp.gov.br,ESPECIALISTA,216,PES_II_A,https://lattes.cnpq.br/WA7TIMX36UBSUCAY,ATIVO,
+Vinicius Barbosa,viniciusbarbosa276@fatec.sp.gov.br,MESTRE,109,PES_I_A,https://lattes.cnpq.br/874P62U6JESF1KGI,AFASTADO,Liberado para alocação
+Camila Silva,camilasilva711@fatec.sp.gov.br,ESPECIALISTA,216,PES_II_A,https://lattes.cnpq.br/KSHZYA97XL4DXXHP,LICENCA,Professor em avaliação
+Marina Souza,marinasouza762@fatec.sp.gov.br,MESTRE,303,PES_III_B,https://lattes.cnpq.br/K9C8NWLPMPCASA09,ATIVO,Professor em avaliação
+Carlos Rodrigues,carlosrodrigues199@fatec.sp.gov.br,MESTRE,145,PES_III_B,https://lattes.cnpq.br/1BKRNHCT225DWC71,ATIVO,
+Larissa Almeida,larissaalmeida267@fatec.sp.gov.br,DOUTOR,216,PES_I_A,https://lattes.cnpq.br/KKFEKSYWRK4T4K5L,AFASTADO,Liberado para alocação
+Ana Barbosa,anabarbosa873@gmail.com,MESTRE,188,PES_I_C,https://lattes.cnpq.br/SZ7IEXD0Q30RUVTK,AFASTADO,
+Larissa Barbosa,larissabarbosa814@fatec.sp.gov.br,ESPECIALISTA,188,PES_II_B,https://lattes.cnpq.br/RTS7LTPGW3EM9028,AFASTADO,
+João Silva,joãosilva831@gmail.com,MESTRE,169,PES_I_B,https://lattes.cnpq.br/4H4F1V6JBCKLAGFJ,AFASTADO,
+Lucas Oliveira,lucasoliveira242@fatec.sp.gov.br,DOUTOR,325,PES_III_A,https://lattes.cnpq.br/R8AVN3D477Y5G3ZC,ATIVO,Professor em avaliação
+Beatriz Oliveira,beatrizoliveira317@fatec.sp.gov.br,MESTRE,188,PES_III_B,https://lattes.cnpq.br/H0DFA0X1Q603FZ3L,ATIVO,
+Eduardo Souza,eduardosouza485@gmail.com,MESTRE,145,PES_II_A,https://lattes.cnpq.br/DLOGPRU57LIQHDF9,ATIVO,Professor em avaliação
+Mateus Almeida,mateusalmeida446@fatec.sp.gov.br,ESPECIALISTA,011,PES_I_A,https://lattes.cnpq.br/94ZGZK3YMWJE7CSS,ATIVO,Professor em avaliação
+João Oliveira,joãooliveira254@fatec.sp.gov.br,DOUTOR,020,PES_II_A,https://lattes.cnpq.br/NO7NFI17KH4GYKLV,LICENCA,Professor em avaliação
+Eduardo Oliveira,eduardooliveira241@fatec.sp.gov.br,MESTRE,276,PES_I_C,https://lattes.cnpq.br/A3SN3P1RG3NQPT18,ATIVO,Professor em avaliação
+Lucas Pereira,lucaspereira419@fatec.sp.gov.br,MESTRE,220,PES_III_A,https://lattes.cnpq.br/5FE9VAN74WX18V89,ATIVO,Professor em avaliação
+Marina Oliveira,marinaoliveira463@fatec.sp.gov.br,ESPECIALISTA,062,PES_I_C,https://lattes.cnpq.br/GCXDN82066YU7N8F,LICENCA,Liberado para alocação
+Lucas Oliveira,lucasoliveira879@fatec.sp.gov.br,DOUTOR,081,PES_I_A,https://lattes.cnpq.br/UEZ70ZC35JHUP2YM,ATIVO,
+João Silva,joãosilva630@fatec.sp.gov.br,DOUTOR,145,PES_I_A,https://lattes.cnpq.br/USJXA3F9B16M07RL,ATIVO,
+Eduardo Oliveira,eduardooliveira173@gmail.com,ESPECIALISTA,196,PES_I_A,https://lattes.cnpq.br/4NAG7BZADK6STSKL,AFASTADO,Liberado para alocação
+Mateus Barbosa,mateusbarbosa243@fatec.sp.gov.br,DOUTOR,324,PES_I_C,https://lattes.cnpq.br/SLFDWZRALMIVOIB3,NAO_ATIVO,Professor em avaliação
+Fernanda Pereira,fernandapereira410@fatec.sp.gov.br,MESTRE,188,PES_I_C,https://lattes.cnpq.br/ZP94LV2HZYH0X1SV,AFASTADO,
+Eduardo Oliveira,eduardooliveira392@fatec.sp.gov.br,DOUTOR,188,PES_II_B,https://lattes.cnpq.br/CXJKOEMOSRVNFBT2,AFASTADO,
+Fernanda Costa,fernandacosta834@fatec.sp.gov.br,DOUTOR,325,PES_II_A,https://lattes.cnpq.br/LXO7DBGFEWTONVKD,LICENCA,Liberado para alocação
+Camila Costa,camilacosta120@fatec.sp.gov.br,DOUTOR,220,PES_II_A,https://lattes.cnpq.br/VDXSC5K7DANAIDVL,ATIVO,
+Beatriz Almeida,beatrizalmeida257@fatec.sp.gov.br,DOUTOR,321,PES_III_A,https://lattes.cnpq.br/ENX2MDRR2LC28OQF,AFASTADO,Liberado para alocação
+Beatriz Souza,beatrizsouza107@fatec.sp.gov.br,MESTRE,011,PES_I_C,https://lattes.cnpq.br/P1CFPOJOZ9P9C067,AFASTADO,Liberado para alocação
+Carlos Oliveira,carlosoliveira172@fatec.sp.gov.br,MESTRE,120,PES_II_B,https://lattes.cnpq.br/YRVGWFPNML4ZLRXR,AFASTADO,
+João Pereira,joãopereira157@fatec.sp.gov.br,DOUTOR,121,PES_II_A,https://lattes.cnpq.br/DAVY0JG49I2FLUOO,NAO_ATIVO,Professor em avaliação
+João Oliveira,joãooliveira868@fatec.sp.gov.br,DOUTOR,324,PES_III_A,https://lattes.cnpq.br/YW08ZELCWV7ID1FB,AFASTADO,
+Eduardo Oliveira,eduardooliveira213@gmail.com,MESTRE,062,PES_I_C,https://lattes.cnpq.br/LZWO1YWWJHPZZ289,ATIVO,Professor em avaliação
+Mateus Rodrigues,mateusrodrigues400@fatec.sp.gov.br,ESPECIALISTA,324,PES_I_B,https://lattes.cnpq.br/5Y22VZA1QKIVQQJO,AFASTADO,Liberado para alocação
+Fernanda Costa,fernandacosta223@fatec.sp.gov.br,MESTRE,051,PES_II_B,https://lattes.cnpq.br/QP0LMLQ91U61FO1R,LICENCA,Liberado para alocação
+Eduardo Rodrigues,eduardorodrigues976@fatec.sp.gov.br,DOUTOR,159,PES_II_A,https://lattes.cnpq.br/PCSL8U7GI2BE9SKM,AFASTADO,Liberado para alocação
+Beatriz Pereira,beatrizpereira662@fatec.sp.gov.br,DOUTOR,232,PES_II_A,https://lattes.cnpq.br/CNJ7N523CCPHWJY1,ATIVO,
+Vinicius Pereira,viniciuspereira518@fatec.sp.gov.br,DOUTOR,188,PES_II_A,https://lattes.cnpq.br/V2KSP2JIC6KBR2SG,ATIVO,
+Marina Souza,marinasouza169@fatec.sp.gov.br,ESPECIALISTA,232,PES_I_A,https://lattes.cnpq.br/E443KGVBN5GG9VCT,ATIVO,Professor em avaliação
+Carlos Barbosa,carlosbarbosa954@fatec.sp.gov.br,MESTRE,276,PES_I_B,https://lattes.cnpq.br/OT6SCHLA4EK6ZPS7,ATIVO,
+Juliana Costa,julianacosta813@fatec.sp.gov.br,ESPECIALISTA,120,PES_I_A,https://lattes.cnpq.br/QNCXJEAX58L4HTNC,LICENCA,Experiência internacional
+Marina Oliveira,marinaoliveira339@fatec.sp.gov.br,ESPECIALISTA,321,PES_II_A,https://lattes.cnpq.br/MH6VCBIORKOR6MGI,ATIVO,Professor em avaliação
+Carlos Oliveira,carlosoliveira415@fatec.sp.gov.br,MESTRE,085,PES_I_A,https://lattes.cnpq.br/6NFHP56PB6M5XLQV,LICENCA,Professor em avaliação
+João Souza,joãosouza749@fatec.sp.gov.br,MESTRE,324,PES_I_A,https://lattes.cnpq.br/BXCS8TGYX5XY61W8,LICENCA,Professor em avaliação
+Fernanda Barbosa,fernandabarbosa640@fatec.sp.gov.br,MESTRE,276,PES_II_B,https://lattes.cnpq.br/H8S1PL8FQ5B8IC5T,ATIVO,Professor em avaliação
+Fernanda Silva,fernandasilva408@gmail.com,ESPECIALISTA,166,PES_I_A,https://lattes.cnpq.br/2INLC4ZBABRI7WDI,AFASTADO,
+Juliana Barbosa,julianabarbosa274@fatec.sp.gov.br,MESTRE,081,PES_II_B,https://lattes.cnpq.br/1RRUBZ3I28N71W81,AFASTADO,
+Lucas Silva,lucassilva626@fatec.sp.gov.br,ESPECIALISTA,175,PES_I_B,https://lattes.cnpq.br/YRYNLCO3L6PYAPAC,ATIVO,Professor em avaliação
+João Pereira,joãopereira246@fatec.sp.gov.br,MESTRE,325,PES_I_A,https://lattes.cnpq.br/AAU8EMTLL46QOU0P,AFASTADO,Liberado para alocação
+Juliana Oliveira,julianaoliveira194@fatec.sp.gov.br,DOUTOR,109,PES_I_A,https://lattes.cnpq.br/IU36RGG987BO0FMH,AFASTADO,
+Fernanda Oliveira,fernandaoliveira551@fatec.sp.gov.br,MESTRE,216,PES_I_A,https://lattes.cnpq.br/4NZUVVYFFXAKYJO4,LICENCA,Liberado para alocação
+Carlos Barbosa,carlosbarbosa963@fatec.sp.gov.br,DOUTOR,282,PES_I_B,https://lattes.cnpq.br/VI276D9MISORPQAA,NAO_ATIVO,Experiência internacional
+Vinicius Almeida,viniciusalmeida561@fatec.sp.gov.br,DOUTOR,020,PES_II_A,https://lattes.cnpq.br/8M8B32KYI7LYB6X3,AFASTADO,Liberado para alocação
+Fernanda Costa,fernandacosta868@fatec.sp.gov.br,DOUTOR,303,PES_I_A,https://lattes.cnpq.br/D3V1LCDD715MT7XO,LICENCA,Experiência internacional
+Camila Almeida,camilaalmeida834@fatec.sp.gov.br,MESTRE,145,PES_II_A,https://lattes.cnpq.br/UYHPU69L9GBSJRMJ,LICENCA,Experiência internacional
+Marina Almeida,marinaalmeida115@fatec.sp.gov.br,MESTRE,216,PES_II_B,https://lattes.cnpq.br/N7WUD7T5FC9168GP,AFASTADO,
+Larissa Rodrigues,larissarodrigues421@fatec.sp.gov.br,DOUTOR,085,PES_III_B,https://lattes.cnpq.br/11ZSV7LDFCBM5VGP,LICENCA,Professor em avaliação
+Larissa Souza,larissasouza833@fatec.sp.gov.br,MESTRE,169,PES_I_C,https://lattes.cnpq.br/F3MP090QLFOK705X,LICENCA,Professor em avaliação
+Juliana Costa,julianacosta593@gmail.com,DOUTOR,085,PES_III_B,https://lattes.cnpq.br/0OPYG0M43IPMAUFN,AFASTADO,Liberado para alocação
+Ana Souza,anasouza529@fatec.sp.gov.br,MESTRE,291,PES_II_B,https://lattes.cnpq.br/F7KBW2PCHRWBP2BE,ATIVO,Professor em avaliação
+Ana Silva,anasilva224@fatec.sp.gov.br,MESTRE,276,PES_I_C,https://lattes.cnpq.br/C4B9LB5DFAHQ9D0K,ATIVO,
+Juliana Almeida,julianaalmeida618@fatec.sp.gov.br,DOUTOR,109,PES_II_B,https://lattes.cnpq.br/XZE5XMI7497UUD04,NAO_ATIVO,
+Camila Silva,camilasilva646@fatec.sp.gov.br,MESTRE,324,PES_III_A,https://lattes.cnpq.br/3VFENJWJ7O780256,ATIVO,Professor em avaliação
+João Barbosa,joãobarbosa598@fatec.sp.gov.br,ESPECIALISTA,062,PES_I_A,https://lattes.cnpq.br/EM0KKEX7D0CYVVTE,LICENCA,Liberado para alocação
+Ana Pereira,anapereira270@fatec.sp.gov.br,ESPECIALISTA,196,PES_II_A,https://lattes.cnpq.br/B8L32MJMT4HSBH3B,ATIVO,Professor em avaliação
+Lucas Pereira,lucaspereira962@fatec.sp.gov.br,MESTRE,325,PES_I_C,https://lattes.cnpq.br/LAPNOUQPCBCNP7KL,ATIVO,Professor em avaliação
+Larissa Rodrigues,larissarodrigues423@fatec.sp.gov.br,MESTRE,011,PES_III_B,https://lattes.cnpq.br/06W6A87XIO0L15YC,NAO_ATIVO,Experiência internacional
+João Silva,joãosilva323@fatec.sp.gov.br,DOUTOR,159,PES_I_A,https://lattes.cnpq.br/DLZR25IOZEW6YICL,ATIVO,
+João Pereira,joãopereira239@fatec.sp.gov.br,ESPECIALISTA,303,PES_I_C,https://lattes.cnpq.br/2RYZFLTP3YFX45DK,NAO_ATIVO,
+Ana Barbosa,anabarbosa334@fatec.sp.gov.br,DOUTOR,241,PES_I_A,https://lattes.cnpq.br/CYYSOA010UZC0WNU,ATIVO,
+Carlos Souza,carlossouza821@fatec.sp.gov.br,DOUTOR,321,PES_II_B,https://lattes.cnpq.br/3XOFQZ65NMJVDGPT,AFASTADO,Liberado para alocação
+João Silva,joãosilva812@fatec.sp.gov.br,MESTRE,051,PES_I_A,https://lattes.cnpq.br/5V9R8TZD0YSCKY1C,NAO_ATIVO,Professor em avaliação
+Eduardo Silva,eduardosilva370@fatec.sp.gov.br,ESPECIALISTA,051,PES_II_A,https://lattes.cnpq.br/P54HV6441KIMLEI0,LICENCA,Professor em avaliação
+Camila Silva,camilasilva758@fatec.sp.gov.br,ESPECIALISTA,308,PES_I_B,https://lattes.cnpq.br/EWGXRZYVEDHU19L7,LICENCA,Liberado para alocação
+Fernanda Rodrigues,fernandarodrigues317@fatec.sp.gov.br,ESPECIALISTA,009,PES_III_B,https://lattes.cnpq.br/HYB5T4WVP415I3JY,NAO_ATIVO,Professor em avaliação
+Juliana Costa,julianacosta350@fatec.sp.gov.br,ESPECIALISTA,196,PES_I_A,https://lattes.cnpq.br/VYO28EFNM52LKP1P,LICENCA,Professor em avaliação

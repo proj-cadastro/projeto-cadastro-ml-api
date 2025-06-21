@@ -50,10 +50,11 @@ def write_model_report(campo, tipo, dados):
     path_dir = f"docs/{'neural_network' if tipo == 'neural_network' else 'decision_tree'}"
     os.makedirs(path_dir, exist_ok=True)
     path = os.path.join(path_dir, f"{campo}.txt")
-
-    lines = []
+    lines = [
+        "Observação: Para predição parcial, este campo é previsto por ML apenas se algum dos campos de entrada relevantes for fornecido. Caso contrário, a predição é feita por estatística, sorteando entre os valores mais comuns do banco.\n"
+    ]
     if tipo == "neural_network":
-        lines = [
+        lines += [
             f"Rede Neural:",
             f"Arquitetura do Modelo: {dados['architecture']}",
             f"Hiperparâmetros: Otimizador: Adam, Função de Ativação: ReLU, Épocas: 50, Batch: 8",
@@ -63,7 +64,7 @@ def write_model_report(campo, tipo, dados):
             f"Matriz de Confusão: {dados['confusion']}"
         ]
     else:
-        lines = [
+        lines += [
             f"Árvore de Decisão:",
             f"Características do Modelo: Tipo: DecisionTreeClassifier",
             f"Desempenho: Acurácia: {dados['accuracy']:.4f}, Precisão: {dados['precision']:.4f}, Recall: {dados['recall']:.4f}, F1: {dados['f1']:.4f}",
@@ -72,7 +73,6 @@ def write_model_report(campo, tipo, dados):
             f"Tempo de Treinamento: (Não registrado)",
             f"Matriz de Confusão: {dados['confusion']}"
         ]
-
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
@@ -80,22 +80,18 @@ def generate_report():
     campos = ["titulacao", "email_ext", "referencia", "statusAtividade"]
     df = load_professores()
     comparativo = []
-
     for campo in campos:
         dados_tree = preprocess_for_decision_tree(df, save_dir="modelos_treinados")[campo]
         X_tree, y_tree = dados_tree["X"], dados_tree["y"]
         arv = evaluate_tree_model(X_tree, y_tree, campo)
         write_model_report(campo, "decision_tree", arv)
-
         X_nn, y_cat, y_encoded, _ = preprocess_for_neural_network(df, campo)
         nn = evaluate_nn_model(X_nn, y_cat, y_encoded, campo)
         write_model_report(campo, "neural_network", nn)
-
         melhor = "neural_network" if nn["accuracy"] >= arv["accuracy"] else "decision_tree"
         comparativo.append(
             f"{campo}:\n  Melhor modelo: {melhor}\n  Acurácia NN: {nn['accuracy']:.4f}\n  Acurácia DT: {arv['accuracy']:.4f}"
         )
-
     with open("docs/comparativo.txt", "w", encoding="utf-8") as f:
         f.write("\n\n".join(comparativo))
 

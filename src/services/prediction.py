@@ -1,10 +1,14 @@
 import pandas as pd
+import joblib
 from src.schemas.professor import ProfessorPartialInput, ProfessorFullOutput
 from src.utils.load_data import load_professores
 from src.utils.email import extract_email_extension
 from src.utils.predict_value import predict_field_value
 from src.utils.generate_data import gerar_nome_email_lattes
 from src.utils.name_generator import gerar_email_unico, gerar_lattes
+from src.utils.statistics import get_top3_random, get_referencia_top5_random
+
+PARTIAL_MODELS_DIR = "modelos_treinados/partial"
 
 def predict_professor_full():
     df = load_professores()
@@ -27,47 +31,56 @@ def predict_professor_full():
 
 def predict_professor_partial(data: ProfessorPartialInput):
     entrada = data.model_dump(exclude_none=True)
-    df = pd.DataFrame([entrada])
+    campos = ["titulacao", "referencia", "statusAtividade"]
+    presentes = [c for c in campos if c in entrada]
+    faltantes = [c for c in campos if c not in entrada]
 
-    if "email" in df.columns:
-        df["email_ext"] = df["email"].apply(extract_email_extension)
-        df.drop(columns=["email"], inplace=True)
+    if "nome" not in entrada:
+        nome, _, _ = gerar_nome_email_lattes("fatec.sp.gov.br")
+        entrada["nome"] = nome
+    if "email" not in entrada:
+        entrada["email"] = gerar_email_unico(entrada["nome"], "fatec.sp.gov.br")
+    if "lattes" not in entrada:
+        entrada["lattes"] = gerar_lattes(entrada["nome"])
 
-    X = pd.get_dummies(df)
-    X = X.reindex(columns=sorted(X.columns), fill_value=0)
-
-    campos_alvo = ["titulacao", "email_ext", "referencia", "statusAtividade"]
     previsoes = {}
 
-    for campo in campos_alvo:
-        if campo not in entrada:
-            previsoes[campo] = predict_field_value(campo, X)
-
-    # Geração de nome, email e lattes
-    if "nome" not in entrada:
-        email_ext = previsoes.get("email_ext", entrada.get("email_ext"))
-        nome, _, _ = gerar_nome_email_lattes(email_ext)
-        previsoes["nome"] = nome
-        previsoes["email"] = gerar_email_unico(nome, email_ext)
-        previsoes["lattes"] = gerar_lattes(nome)
+    if 1 <= len(faltantes) <= 2 and len(presentes) > 0:
+        model_name = "parcial_" + "_".join(sorted(faltantes)) + ".pkl"
+        model_path = f"{PARTIAL_MODELS_DIR}/{model_name}"
+        model = joblib.load(model_path)
+        X = pd.get_dummies(pd.DataFrame([{c: entrada[c] for c in presentes}]))
+        for col in model.feature_names_in_:
+            if col not in X.columns:
+                X[col] = 0
+        X = X[model.feature_names_in_]
+        pred = model.predict(X)
+        if len(faltantes) == 1:
+            previsoes[faltantes[0]] = pred[0]
+        else:
+            previsoes[faltantes[0]] = pred[0][0]
+            previsoes[faltantes[1]] = pred[0][1]
     else:
-        email_ext = previsoes.get("email_ext", entrada.get("email_ext"))
-        nome = entrada["nome"]
-        previsoes["email"] = gerar_email_unico(nome, email_ext)
-        previsoes["lattes"] = gerar_lattes(nome)
+        if "titulacao" not in entrada:
+            previsoes["titulacao"] = get_top3_random("titulacao")
+        if "referencia" not in entrada:
+            previsoes["referencia"] = get_referencia_top5_random()
+        if "statusAtividade" not in entrada:
+            previsoes["statusAtividade"] = get_top3_random("statusAtividade")
 
     ordem = [
         "nome",
         "email",
         "titulacao",
         "idUnidade",
-        "email_ext",
         "referencia",
         "statusAtividade",
         "lattes"
     ]
     resposta = {}
     for campo in ordem:
-        if campo not in entrada and campo in previsoes:
+        if campo in entrada:
+            resposta[campo] = entrada[campo]
+        elif campo in previsoes:
             resposta[campo] = previsoes[campo]
     return resposta

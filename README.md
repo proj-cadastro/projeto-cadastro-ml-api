@@ -1,29 +1,69 @@
 # 📚 API de Cadastro Inteligente de Professores
 
-Esta API realiza o cadastro inteligente de professores, prevendo e completando automaticamente campos com base em informações parciais fornecidas pelo usuário. Utiliza modelos de **Machine Learning** — Árvore de Decisão e Rede Neural — treinados com dados reais para oferecer sugestões confiáveis e consistentes.
+Esta API realiza o cadastro inteligente de professores, prevendo e completando automaticamente campos com base em informações parciais fornecidas pelo usuário. Utiliza modelos de Machine Learning (Árvore de Decisão e Rede Neural) e algoritmos estatísticos para oferecer sugestões confiáveis, realistas e variadas, baseando-se em dados reais de professores.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- **`/predict/full`**: Retorna todos os campos previstos de um professor.
-- **`/predict/partial`**: Recebe um JSON com informações parciais e retorna os campos faltantes previstos automaticamente.
-- **`/train`**: Re-treina todos os modelos de Machine Learning e gera relatórios de desempenho.
-- **Geração automática de relatórios**: Salva métricas e matrizes de confusão em `/docs`.
-- **Geração única de e-mail e Lattes**: Cria e-mail e link Lattes exclusivos baseados no nome.
+- **Predição Completa (`/predict/full`)**: Gera um cadastro completo de professor, prevendo todos os campos relevantes usando os melhores modelos de ML treinados.
+- **Predição Parcial (`/predict/partial`)**: Recebe um JSON com informações parciais e retorna os campos faltantes previstos automaticamente, utilizando modelos parciais de ML ou algoritmos estatísticos, conforme o cenário.
+- **Re-treinamento Manual (`/train`)**: Permite re-treinar todos os modelos de Machine Learning (completos e parciais) e gerar relatórios de desempenho sob demanda.
+- **Re-treinamento Automático**: O sistema verifica periodicamente (a cada 2 horas) se houve alteração significativa no banco de dados e, se necessário, re-treina todos os modelos e atualiza os relatórios.
+- **Geração de Relatórios**: Salva métricas detalhadas, matrizes de confusão e comparativos de desempenho dos modelos em `/docs`.
+- **Geração Única de E-mail e Lattes**: Cria e-mail e link Lattes exclusivos baseados no nome do professor.
 - **Autenticação via API Key**: Todas as rotas são protegidas por chave de API.
-- **Re-treinamento automático**: O sistema verifica periodicamente a necessidade de re-treinamento.
+- **Verificação Automática de Modelos**: Antes de cada requisição, a API garante que todos os modelos necessários estejam treinados e prontos para uso.
 
 ---
 
-## 🧠 Pipeline de Funcionamento
+## 🧠 Pipeline e Arquitetura
 
-1. **Pré-processamento**: Carregamento de dados do banco ou CSV.
-2. **Treinamento**: Modelos de Árvore de Decisão e Rede Neural são treinados para cada campo.
-3. **Relatórios**: Relatórios de desempenho e matrizes de confusão são salvos.
-4. **Predição**: Campos ausentes são inferidos com base nos modelos treinados.
-5. **Geração de E-mail e Lattes**: Criação única baseada no nome e domínio.
-6. **Retorno Estruturado**: O retorno segue o modelo completo, omitindo campos já fornecidos.
+### 1. **Pré-processamento de Dados**
+- Os dados são carregados do banco de dados MySQL ou de um arquivo CSV, conforme configuração.
+- Realiza-se limpeza, tratamento de valores ausentes e transformação de variáveis categóricas em dummies para uso nos modelos.
+
+### 2. **Treinamento de Modelos**
+- **Modelos Completos**: Para cada campo previsto por ML (`titulacao`, `email_ext`, `referencia`, `statusAtividade`), são treinados dois modelos: Árvore de Decisão e Rede Neural.
+- **Modelos Parciais**: Para predição parcial, são treinados 6 modelos específicos:
+  - 3 modelos para prever cada campo individualmente (quando apenas 1 dos 3 está ausente).
+  - 3 modelos para prever pares de campos (quando 2 dos 3 estão ausentes).
+- Os modelos são salvos em `modelos_treinados/` (completos) e `modelos_treinados/partial/` (parciais).
+
+### 3. **Geração de Relatórios**
+- Para cada campo e tipo de modelo, é gerado um relatório detalhado em `/docs/decision_tree/` e `/docs/neural_network/`, contendo:
+  - Observação sobre o uso do modelo (completo ou parcial).
+  - Arquitetura do modelo (para redes neurais).
+  - Hiperparâmetros.
+  - Métricas: acurácia, precisão, recall, F1-score.
+  - Matriz de confusão.
+  - Análise de overfitting/underfitting.
+- Um relatório comparativo (`/docs/comparativo.txt`) resume o desempenho dos modelos e indica o melhor modelo para cada campo.
+
+### 4. **Predição**
+- **Predição Completa**: Utiliza sempre o melhor modelo treinado para cada campo, conforme o relatório comparativo.
+- **Predição Parcial**:
+  - Se o usuário fornecer pelo menos 1 dos 3 campos de ML (`titulacao`, `referencia`, `statusAtividade`), utiliza o modelo parcial correspondente para prever os campos faltantes.
+  - Se nenhum desses campos for fornecido, utiliza algoritmos estatísticos que sorteiam entre os 3 valores mais comuns de cada campo, garantindo variedade e evitando respostas "viciadas".
+- **Geração de Nome, E-mail e Lattes**: Sempre que necessário, gera valores únicos e consistentes para esses campos, baseando-se em listas de nomes reais e regras de formatação.
+
+### 5. **Verificação e Re-treinamento**
+- Antes de cada requisição, a API verifica se todos os modelos necessários estão treinados. Se não estiverem, realiza o treinamento automaticamente.
+- O re-treinamento automático é disparado a cada 2 horas, ou sempre que houver alteração significativa no número de registros do banco de dados.
+
+---
+
+## 🔍 Algoritmos Utilizados
+
+### Modelos de Machine Learning
+
+- **Árvore de Decisão (DecisionTreeClassifier)**: Utilizada para classificação dos campos categóricos. Permite interpretar a importância das variáveis e é eficiente para conjuntos de dados menores.
+- **Rede Neural (Keras Sequential)**: Utilizada para classificação, especialmente quando há maior complexidade ou não-linearidade nos dados. Arquitetura e hiperparâmetros são definidos e registrados nos relatórios.
+
+### Algoritmo Estatístico para Predição Parcial
+
+- Quando nenhum campo de ML é fornecido, a API sorteia o valor de cada campo entre os 3 mais comuns do banco, garantindo variedade e evitando respostas repetitivas.
+- Para o campo `referencia`, o sorteio é feito entre as 3 referências mais frequentes, respeitando a ordem de progressão das referências.
 
 ---
 
@@ -40,10 +80,7 @@ cd projeto-cadastro-ml-api
 
 ```bash
 python -m venv .venv
-# Windows
 .venv\Scripts\activate
-# Linux/Mac
-source .venv/bin/activate
 ```
 
 ### 3. Instale as dependências
@@ -61,13 +98,12 @@ cp .env-exemplo .env
 Preencha com:
 - Configurações do banco de dados
 - Sua `API_KEY`
+- Defina `USE_CSV=true` se quiser usar o CSV ao invés do banco
 
 ### 5. Treine os modelos (opcional)
 
 ```bash
 python main.py
-# ou
-uvicorn src.app:app --reload
 ```
 
 ### 6. Execute a API
@@ -78,33 +114,82 @@ uvicorn src.app:app --reload
 
 ---
 
-## 📬 Exemplo de Requisição
+## 📬 Exemplos de Requisição
+
+### Predição Parcial
 
 **POST /predict/partial**
 
-```http
+```
 Headers:
 apikey: <SUA_API_KEY>
 ```
 
+#### Exemplo 1: Nenhum campo de ML fornecido
+
 ```json
 {
-  "nome": "Maria Silva",
+  "nome": "Maria Meireles"
+}
+```
+
+**Resposta:**
+```json
+{
+  "nome": "Maria Meireles",
+  "email": "maria.meireles@fatec.sp.gov.br",
+  "titulacao": "MESTRE",
+  "referencia": "PES_II_F",
+  "statusAtividade": "ATIVO",
+  "lattes": "https://lattes.com.br/mariameireles"
+}
+```
+> Os campos `titulacao`, `referencia` e `statusAtividade` são sorteados entre os 3 mais comuns do banco.
+
+#### Exemplo 2: Um campo de ML fornecido
+
+```json
+{
+  "nome": "Maria Meireles",
   "titulacao": "DOUTOR"
 }
 ```
 
 **Resposta:**
+```json
+{
+  "nome": "Maria Meireles",
+  "email": "maria.meireles@fatec.sp.gov.br",
+  "titulacao": "DOUTOR",
+  "referencia": "PES_III_A",
+  "statusAtividade": "ATIVO",
+  "lattes": "https://lattes.com.br/mariameireles"
+}
+```
+> Os campos `referencia` e `statusAtividade` são previstos por ML, considerando a `titulacao` fornecida.
+
+#### Exemplo 3: Dois campos de ML fornecidos
 
 ```json
 {
-  "email_ext": "gmail.com",
-  "referencia": "PES_I_D",
-  "statusAtividade": "LICENCA",
-  "email": "maria.silva@gmail.com",
-  "lattes": "https://lattes.com.br/mariasilva"
+  "nome": "Maria Meireles",
+  "titulacao": "MESTRE",
+  "referencia": "PES_I_A"
 }
 ```
+
+**Resposta:**
+```json
+{
+  "nome": "Maria Meireles",
+  "email": "maria.meireles@fatec.sp.gov.br",
+  "titulacao": "MESTRE",
+  "referencia": "PES_I_A",
+  "statusAtividade": "AFASTADO",
+  "lattes": "https://lattes.com.br/mariameireles"
+}
+```
+> Apenas `statusAtividade` é previsto por ML, considerando os campos fornecidos.
 
 ---
 
@@ -112,14 +197,44 @@ apikey: <SUA_API_KEY>
 
 ```
 ├── src/
+│   ├── app.py
+│   ├── controllers.py
+│   ├── routes.py
+│   ├── ...
+│   ├── services/
+│   │   ├── train_decision_tree.py
+│   │   ├── train_nn.py
+│   │   ├── train_partial_models.py
+│   │   ├── generate_model_reports.py
+│   │   └── ...
+│   ├── utils/
+│   │   ├── statistics.py
+│   │   ├── model_check.py
+│   │   ├── ...
+│   └── ...
 ├── docs/
+│   ├── comparativo.txt
 │   ├── confusion_matrix/
 │   │   ├── decision_tree/
 │   │   └── neural_network/
-│   ├── comparativo.txt
-│   └── reports/
+│   ├── decision_tree/
+│   └── neural_network/
 ├── modelos_treinados/
+│   ├── partial/
+│   │   ├── parcial_titulacao.pkl
+│   │   ├── parcial_referencia.pkl
+│   │   ├── parcial_statusAtividade.pkl
+│   │   ├── parcial_titulacao_referencia.pkl
+│   │   ├── parcial_titulacao_statusAtividade.pkl
+│   │   └── parcial_referencia_statusAtividade.pkl
+│   ├── titulacao_model.pkl
+│   ├── titulacao_nn.h5
+│   ├── ...
 ├── logs/
+│   ├── errors.log
+│   ├── predictions.log
+│   ├── training.log
+│   └── used_database.log
 ├── .env
 ├── requirements.txt
 └── README.md
@@ -127,165 +242,79 @@ apikey: <SUA_API_KEY>
 
 ---
 
-## 📊 Desempenho dos Modelos
+## 📊 Relatórios e Métricas
 
-### Árvore de Decisão
+### Relatórios Individuais
 
-<table>
-  <tr>
-    <td>
-      <p><strong>Email</strong></p>
-      <img src="docs/confusion_matrix/decision_tree/confusion_matrix_email_ext_decision_tree.png" width="380"/>
-    </td>
-    <td>
-      <p><strong>Referência</strong></p>
-      <img src="docs/confusion_matrix/decision_tree/confusion_matrix_referencia_decision_tree.png" width="380"/>
-    </td>
-  </tr>
-</table>
+- Para cada campo e tipo de modelo, é gerado um relatório em `/docs/decision_tree/` e `/docs/neural_network/`.
+- Cada relatório contém:
+  - Observação sobre o uso do modelo (completo ou parcial).
+  - Arquitetura do modelo (para redes neurais).
+  - Hiperparâmetros.
+  - Métricas: acurácia, precisão, recall, F1-score.
+  - Matriz de confusão.
+  - Análise de overfitting/underfitting.
 
-### Rede Neural
+### Relatório Comparativo
 
-<table>
-  <tr>
-    <td>
-      <p><strong>Email</strong></p>
-      <img src="docs/confusion_matrix/neural_network/confusion_matrix_email_ext_nn.png" width="380"/>
-    </td>
-    <td>
-      <p><strong>Referência</strong></p>
-      <img src="docs/confusion_matrix/neural_network/confusion_matrix_referencia_nn.png" width="380"/>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>Status Atividade</strong></p>
-      <img src="docs/confusion_matrix/neural_network/confusion_matrix_statusAtividade_nn.png" width="380"/>
-    </td>
-    <td>
-      <p><strong>Titulação</strong></p>
-      <img src="docs/confusion_matrix/neural_network/confusion_matrix_titulacao_nn.png" width="380"/>
-    </td>
-  </tr>
-</table>
+- O arquivo `/docs/comparativo.txt` resume o desempenho dos modelos e indica o melhor modelo para cada campo, com base na acurácia.
 
----
-
-## 🏆 Escolha do Melhor Modelo com Base na Acurácia
-
-Durante o processo de treinamento, a API treina dois tipos de modelos para cada campo: **Árvore de Decisão** e **Rede Neural**. O modelo com **maior acurácia** no conjunto de validação é automaticamente selecionado para a predição de cada campo.
-
-Os resultados comparativos de desempenho entre os modelos são salvos em:
-
-```
-/docs/comparativo.txt
-```
-
-Esse arquivo contém um resumo detalhado de acurácia, precisão, recall e F1-score de cada modelo por campo previsto. Com base nesses dados, a API escolhe dinamicamente qual modelo usar para cada campo.
-
-### 📄 Exemplo de conteúdo do `comparativo.txt`
+#### Exemplo de conteúdo do `comparativo.txt`:
 
 ```txt
 titulacao:
   Melhor modelo: decision_tree
-  Acurácia NN: 0.8333
-  Acurácia DT: 0.9000
+  Acurácia NN: 0.6200
+  Acurácia DT: 0.6300
 
 email_ext:
-  Melhor modelo: decision_tree
-  Acurácia NN: 0.7667
-  Acurácia DT: 0.9333
+  Melhor modelo: neural_network
+  Acurácia NN: 0.9000
+  Acurácia DT: 0.9000
 
 referencia:
   Melhor modelo: decision_tree
-  Acurácia NN: 0.6667
-  Acurácia DT: 0.9000
+  Acurácia NN: 0.1900
+  Acurácia DT: 0.2100
 
 statusAtividade:
   Melhor modelo: decision_tree
-  Acurácia NN: 0.8000
-  Acurácia DT: 0.9000
-```
-
-### 📄 Exemplo de conteúdo do `email_ext.txt` da `Árvore de Decisão`
-
-```txt
-Árvore de Decisão:
-
-Características do Modelo: Tipo: DecisionTreeClassifier
-Desempenho: Acurácia: 0.9333, Precisão: 0.9389, Recall: 0.9333, F1: 0.9340
-Importância das Variáveis: (não extraído)
-Análise de Overfitting/Underfitting: Comparar erro de treino/teste
-Tempo de Treinamento: (Não registrado)
-
-Matriz de Confusão: [
-[5, 0, 0, 0],
-[1, 9, 0, 0],
-[0, 1, 9, 0],
-[0, 0, 0, 5]]
-
-```
-### 📄 Exemplo de conteúdo do `email_ext.txt` da `Rede Neural`
-
-```txt
-Rede Neural:
-
-Arquitetura do Modelo: [64, 32, 4]
-Hiperparâmetros: Otimizador: Adam, Função de Ativação: ReLU, Épocas: 50, Batch: 8
-Desempenho: Acurácia: 0.7667, Precisão: 0.8397, Recall: 0.7667, F1: 0.7674
-Análise de Overfitting/Underfitting: Verificar matriz de confusão
-Tempo de Treinamento: (Não registrado)
-
-Matriz de Confusão: [
-[3, 1, 0, 1],
-[0, 10, 0, 0],
-[0, 1, 6, 3],
-[0, 1, 0, 4]]
-```
----
-
-## 🔐 Segurança
-
-Todas as rotas são protegidas com autenticação via **API Key**. Inclua no header de todas as requisições:
-
-```
-apikey: <SUA_API_KEY>
+  Acurácia NN: 0.4100
+  Acurácia DT: 0.4400
 ```
 
 ---
 
-## 📅 Agendamento Automático
+## 🔒 Segurança
 
-O sistema verifica automaticamente, em intervalos periódicos, se há necessidade de re-treinar os modelos com novos dados, garantindo predições sempre atualizadas.
-
----
-
-## 🧪 Tecnologias Utilizadas
-
-- **FastAPI**
-- **Scikit-learn**
-- **Keras/TensorFlow**
-- **Pandas & NumPy**
-- **Uvicorn**
-- **dotenv**
+- Todas as rotas são protegidas por API Key, definida no arquivo `.env`.
+- O acesso não autorizado é bloqueado automaticamente.
 
 ---
 
-## 📌 Observações
+## 🔄 Fluxo de Re-treinamento
 
-- Modelos são re-treinados automaticamente se necessário.
-- Matrizes de confusão e relatórios são salvos na pasta `/docs`.
-- E-mails e links Lattes são garantidamente únicos.
-- Compatível com Postman, Insomnia, curl, etc.
-
----
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+- O re-treinamento pode ser disparado manualmente via `/train` ou automaticamente a cada 2 horas.
+- O sistema verifica se houve alteração significativa no número de registros do banco de dados antes de re-treinar.
+- Todos os modelos (completos e parciais) são treinados e os relatórios são atualizados.
 
 ---
 
-## 📄 Licença
+## 🧑‍💻 Detalhes Técnicos
 
-Licenciado sob a [MIT License](LICENSE).
+- **Framework principal:** FastAPI
+- **Machine Learning:** scikit-learn (Árvore de Decisão), TensorFlow/Keras (Rede Neural)
+- **Banco de dados:** MySQL (ou CSV para testes)
+- **Agendamento:** APScheduler
+- **Logs:** Todos os eventos relevantes são registrados em arquivos de log na pasta `/logs`.
+
+---
+
+## 📝 Observações Finais
+
+- O sistema foi projetado para ser robusto, flexível e facilmente extensível.
+- O uso de modelos parciais garante predições realistas mesmo com informações incompletas.
+- O algoritmo estatístico evita respostas repetitivas e "viciadas", tornando a API mais próxima de um sistema real de apoio à decisão.
+- Toda a lógica de verificação e re-treinamento é automática, garantindo que a API esteja sempre pronta para uso.
+
+---

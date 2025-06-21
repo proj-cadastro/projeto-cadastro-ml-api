@@ -17,3 +17,4 @@ def setup_logger(name, log_file):
 error_logger = setup_logger("error", "logs/errors.log")
 train_logger = setup_logger("train", "logs/training.log")
 prediction_logger = setup_logger("predict", "logs/predictions.log")
+database_logger = setup_logger("database", "logs/used_database.log")
