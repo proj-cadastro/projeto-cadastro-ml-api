@@ -1,0 +1,43 @@
+name: Build e Push ML API
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências do sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential default-libmysqlclient-dev pkg-config
+
+      - name: Instalar dependências Python
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fazer login no Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Criar imagem Docker
+        run: |
+          docker build -t projetointegradorfatec/projeto-cadastro-ml-api:latest .
+
+      - name: Publicar imagem no Docker Hub
+        run: |
+          docker push projetointegradorfatec/projeto-cadastro-ml-api:latest
