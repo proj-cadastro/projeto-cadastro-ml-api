@@ -14,6 +14,6 @@ referencia:
   Acurácia DT: 0.1870
 
 statusAtividade:
-  Melhor modelo: neural_network
-  Acurácia NN: 0.3040
+  Melhor modelo: decision_tree
+  Acurácia NN: 0.3030
   Acurácia DT: 0.3040

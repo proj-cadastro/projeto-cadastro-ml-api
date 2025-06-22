@@ -27,4 +27,4 @@ def gerar_email_unico(nome, extensao):
     return candidato
 
 def gerar_lattes(nome):
-    return f"https://lattes.com.br/{nome.replace(' ', '').lower()}"
+    return f"https://lattes.cnpq.br/{nome.replace(' ', '').lower()}"
