@@ -2,8 +2,8 @@ Observação: Para predição parcial, este campo é previsto por ML apenas se a
 
 Árvore de Decisão:
 Características do Modelo: Tipo: DecisionTreeClassifier
-Desempenho: Acurácia: 0.1870, Precisão: 0.0745, Recall: 0.1870, F1: 0.1033
+Desempenho: Acurácia: 0.5714, Precisão: 0.4517, Recall: 0.5714, F1: 0.4902
 Importância das Variáveis: (não extraído)
 Análise de Overfitting/Underfitting: Comparar erro de treino/teste
 Tempo de Treinamento: (Não registrado)
-Matriz de Confusão: [[0, 0, 12, 0, 20, 51, 0, 0, 0, 0], [0, 0, 9, 0, 28, 44, 0, 0, 0, 0], [0, 0, 21, 0, 43, 43, 0, 0, 0, 0], [0, 0, 11, 0, 44, 61, 0, 0, 0, 0], [0, 0, 16, 0, 60, 58, 0, 0, 0, 0], [0, 0, 17, 0, 42, 106, 0, 0, 0, 0], [0, 0, 10, 0, 37, 56, 0, 0, 0, 0], [0, 0, 16, 0, 43, 61, 0, 0, 0, 0], [0, 0, 3, 0, 8, 10, 0, 0, 0, 0], [0, 0, 8, 0, 14, 48, 0, 0, 0, 0]]
+Matriz de Confusão: [[0, 0, 1, 1, 0, 0, 0, 0, 0], [0, 4, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 1, 0, 0, 0], [0, 1, 0, 0, 2, 1, 0, 0, 0], [0, 1, 0, 0, 0, 2, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0]]
