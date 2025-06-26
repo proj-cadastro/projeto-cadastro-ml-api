@@ -36,4 +36,7 @@ def preprocess_for_neural_network(df: pd.DataFrame, target: str):
     y_encoded = le.fit_transform(y)
     y_cat = to_categorical(y_encoded)
 
+    X = X.to_numpy().astype("float32")
+    y_cat = y_cat.astype("float32")
+
     return X, y_cat, y_encoded, le
