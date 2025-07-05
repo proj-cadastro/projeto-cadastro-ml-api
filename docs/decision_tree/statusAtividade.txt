@@ -2,8 +2,8 @@ Observação: Para predição parcial, este campo é previsto por ML apenas se a
 
 Árvore de Decisão:
 Características do Modelo: Tipo: DecisionTreeClassifier
-Desempenho: Acurácia: 0.5238, Precisão: 0.3770, Recall: 0.5238, F1: 0.4381
+Desempenho: Acurácia: 0.5417, Precisão: 0.4097, Recall: 0.5417, F1: 0.4592
 Importância das Variáveis: (não extraído)
 Análise de Overfitting/Underfitting: Comparar erro de treino/teste
 Tempo de Treinamento: (Não registrado)
-Matriz de Confusão: [[2, 2, 0, 0], [2, 7, 0, 0], [0, 0, 2, 0], [2, 3, 1, 0]]
+Matriz de Confusão: [[6, 1, 0, 0], [4, 5, 0, 0], [0, 0, 2, 0], [2, 3, 1, 0]]

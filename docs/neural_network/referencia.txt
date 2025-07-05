@@ -3,7 +3,7 @@ Observação: Para predição parcial, este campo é previsto por ML apenas se a
 Rede Neural:
 Arquitetura do Modelo: [64, 32, 9]
 Hiperparâmetros: Otimizador: Adam, Função de Ativação: ReLU, Épocas: 50, Batch: 8
-Desempenho: Acurácia: 0.4762, Precisão: 0.3270, Recall: 0.4762, F1: 0.3762
+Desempenho: Acurácia: 0.4583, Precisão: 0.3295, Recall: 0.4583, F1: 0.3753
 Análise de Overfitting/Underfitting: Verificar matriz de confusão
 Tempo de Treinamento: (Não registrado)
-Matriz de Confusão: [[2, 0, 0, 0, 0, 0, 0, 0, 0], [0, 3, 0, 0, 1, 0, 0, 0, 0], [2, 0, 0, 0, 0, 0, 0, 0, 0], [2, 0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 3, 1, 0, 0, 0], [0, 1, 0, 0, 0, 2, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0]]
+Matriz de Confusão: [[3, 0, 1, 1, 0, 0, 0, 0, 0], [1, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 0, 1, 0, 0, 0], [2, 1, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 0, 0, 2, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0]]
