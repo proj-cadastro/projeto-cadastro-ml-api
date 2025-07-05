@@ -21,21 +21,23 @@ def train_neural_network_models():
 
     for campo in CAMPOS:
         X, y_cat, y_encoded, encoder = preprocess_for_neural_network(df, campo)
+
         joblib.dump(encoder, os.path.join(MODELOS_DIR, f"{campo}_nn_encoder.pkl"))
 
         X_train, X_val, y_train, y_val = train_test_split(X, y_cat, test_size=0.2, random_state=42)
 
-        model = Sequential()
-        model.add(Dense(64, activation="relu", input_shape=(X.shape[1],)))
-        model.add(Dense(32, activation="relu"))
-        model.add(Dense(y_cat.shape[1], activation="softmax"))
+        model = Sequential([
+            Dense(64, activation="relu", input_shape=(X.shape[1],)),
+            Dense(32, activation="relu"),
+            Dense(y_cat.shape[1], activation="softmax")
+        ])
         model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
 
         history = model.fit(X_train, y_train, epochs=50, batch_size=8, validation_data=(X_val, y_val), verbose=0)
+
         loss, acc = model.evaluate(X_val, y_val, verbose=0)
 
         model.save(os.path.join(MODELOS_DIR, f"{campo}_nn.h5"))
-
         with open(os.path.join(MODELOS_DIR, f"{campo}_nn_info.json"), "w") as f:
             json.dump({"accuracy": acc}, f)
 

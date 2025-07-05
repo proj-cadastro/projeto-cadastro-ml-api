@@ -1,19 +1,19 @@
 titulacao:
-  Melhor modelo: decision_tree
-  Acurácia NN: 0.6190
-  Acurácia DT: 0.6667
+  Melhor modelo: neural_network
+  Acurácia NN: 0.6250
+  Acurácia DT: 0.6250
 
 email_ext:
   Melhor modelo: neural_network
-  Acurácia NN: 0.9048
-  Acurácia DT: 0.9048
+  Acurácia NN: 0.9167
+  Acurácia DT: 0.9167
 
 referencia:
-  Melhor modelo: decision_tree
-  Acurácia NN: 0.4762
-  Acurácia DT: 0.5714
+  Melhor modelo: neural_network
+  Acurácia NN: 0.4583
+  Acurácia DT: 0.4583
 
 statusAtividade:
-  Melhor modelo: neural_network
-  Acurácia NN: 0.5238
-  Acurácia DT: 0.5238
+  Melhor modelo: decision_tree
+  Acurácia NN: 0.5000
+  Acurácia DT: 0.5417
